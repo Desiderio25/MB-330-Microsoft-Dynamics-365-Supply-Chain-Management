@@ -89,7 +89,6 @@ jobs:
                 title: title,
                 body: body,
                 labels: [SYNC_LABEL],
-                assignees: ['Desiderio25', 'copilot']
               });
 
               created++;
