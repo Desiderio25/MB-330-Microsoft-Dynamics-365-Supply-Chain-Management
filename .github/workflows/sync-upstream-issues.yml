@@ -18,7 +18,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const UPSTREAM_OWNER = 'MicrosoftLearning';
-            const UPSTREAM_REPO = 'MS-4010-Extend-Microsoft365-Copilot-declarative-agents-VS-Code';
+            const UPSTREAM_REPO = 'MB-330-Microsoft-Dynamics-365-Supply-Chain-Management';
             const FORK_OWNER = context.repo.owner;
             const FORK_REPO = context.repo.repo;
             const SYNC_LABEL = 'upstream-sync';
