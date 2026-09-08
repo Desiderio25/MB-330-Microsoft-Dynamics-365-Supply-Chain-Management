@@ -55,12 +55,11 @@ to help them creating the new warehouse.
 
 ### Set the default location capacity
 
-1. Access the **Microsoft Dynamics 365 Supply Chain Managment** website and log in with your user credentials.
+1. Access the **Microsoft Dynamics 365 Supply Chain Management** website and log in with your user credentials.
 
-2. On the **Finance and Operations** dashboard page, expand the left navigation pane and select the **Inventory management** under the **Modules** tab.
+2. In the left navigation pane, expand **Modules**, and then select **Inventory management**.
 
-3. On the **Inventory management** page select the  **Setup \> Inventory and warehouse management
-    parameters**.
+3. On the **Inventory management** page select **Setup \> Inventory and warehouse management parameters**.
 
 4. Select the **Locations** tab.
 
@@ -72,25 +71,23 @@ to help them creating the new warehouse.
 
 8. Select **Save**.
 
-9. Close the page.
+9. Select **Back** to return the home page.
 
 ### Define the location name format
 
 1. On the **Finance and Operations** dashboard page, expand the left navigation pane and select the **Inventory management** under the **Modules** tab. On the **Inventory management** page select  **Setup \> Inventory breakdown \> Warehouses**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Warehouse** field, enter **17**.
 
 4. In the **Name** field, enter **Raw materials**.
 
-5. In the **Site** field, select the drop-down button to open the lookup.
+5. Expand the **General** section. In the **Site** field, select the drop-down button to open the lookup.
 
 6. In the list, find and select site **1**.
 
-7. Expand the **Location names** section. The options in this section define
-    the default format for location names. In our example, we'll include the
-    aisle number, rack number and shelf number.
+7. Expand the **Location names** section. The options in this section define the default format for location names. In our example, we'll include the aisle number, rack number and shelf number.
 
 8. Set the **Include aisle** option to **Yes**.
 
@@ -136,7 +133,7 @@ to help them creating the new warehouse.
 
 14. Select **Finish**.
 
-15. Close all pages.
+15. Select **Back** to return to the home page.
 
 Exercise \#2 Creating a standard cost version that uses a specific model group
 -------------------------------------------------------------------------------
@@ -155,7 +152,7 @@ items must be grouped based on FIFO inventory model.
 1. Go to **Cost management \> Predetermined cost policies setup \> Costing
     versions**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Costing type** field, select **Standard cost**.
 
@@ -167,14 +164,14 @@ items must be grouped based on FIFO inventory model.
 
 7. Select **Save**.
 
-8. Close the page.
+8. Select **Back** to return to the home page.
 
 ### Create item model group
 
 1. Go to **Cost management \> Inventory accounting policies setup \> Item model
     groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Item model group** field, enter **STDN**.
 
@@ -186,7 +183,7 @@ items must be grouped based on FIFO inventory model.
 
 7. In the **Approved vendor check method** field, select **No check**.
 
-8. Select **New**.
+8. Select **+ New**.
 
 9. In the **Item model group** field, enter **FIFO2**.
 
@@ -194,14 +191,15 @@ items must be grouped based on FIFO inventory model.
 
 11. Select **Save**.
 
-12. Close the page.
+12. Select **Back** to return to the home page.
+
 
 ### Create tracking number group
 
 1. Go to **Inventory management \> Setup \> Dimensions \> Tracking number
     groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Number group** field, enter **ASer**.
 
@@ -211,7 +209,7 @@ items must be grouped based on FIFO inventory model.
 
 6. Turn off the **Lot ID** toggle to **No**.
 
-7. Turn on the**Number sequence No.** toggle to **Yes**.
+7. Turn on the **Number sequence No.** toggle to **Yes**.
 
 8. Turn on the **Only for inventory transactions** toggle to **Yes**.
 
@@ -238,7 +236,7 @@ items must be grouped based on FIFO inventory model.
 
 19. Set **Per qty.** to **1**.
 
-20. Select **New**.
+20. Select **+ New**.
 
 21. In the **Number group** field, enter **Batch**.
 
@@ -257,7 +255,10 @@ items must be grouped based on FIFO inventory model.
 
 28. Turn off the **On physical update** toggle to **No**.
 
-29. Close the page.
+29. Select **Save**.
+
+30. Select **Back** to return to the home page.
+
 
 Exercise \#3 Adding and releasing new products to a warehouse
 -------------------------------------------------------------
@@ -277,15 +278,17 @@ As supply chain manager, you will have to create 2 new products:
 
 ### Create product masters
 
-1. Navigate to **Product information management\>Products\>Released products**.
+1. Navigate to **Product information management \> Products \> Released products**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Product type** field, select **Item**.
 
 4. In the **Product subtype** field, select **Product master**.
 
 5. In the **Product number** field, enter **GTLS001**.
+
+   > **Note** If you receive a warning message that the product number already exists, choose a different product number.
 
 6. In the **Product name** field, enter **V Neck T-Shirt**.
 
@@ -299,7 +302,7 @@ As supply chain manager, you will have to create 2 new products:
 
 11. In the **Item model group** field, select **FIFO** (First In-First Out).
 
-12. In the Item group field, select **Audio**.
+12. In the **Item group** field, select **Audio**.
 
 13. In the **Storage dimension group** field, select **SiteWH**.
 
@@ -317,23 +320,23 @@ As supply chain manager, you will have to create 2 new products:
     sales tax codes).
 
 20. In the Purchase Taxation, **Item sales tax group** field, select **ALL**
-    (All sales tax codes).
+    (All sales tax codes).    
 
 21. Select **OK**.
 
-22. Close all pages.
+22. Select **Save**.
 
-23. Navigate to **Product information management\>Products\>Released products**.
+23. Navigate to **Product information management \> Products \> Released products**.
 
 24. Using quick filter search by item number for **GTLS001**.
 
 25. Select item **GTLS001** to open the product master record.
 
-26. On the Action Pane, select the **Product** tab, select **Product dimensions** listed under the **Product master** section.
+26. On the Action Pane, select the **Product** tab, and then select **Product dimensions** listed under the **Product master** section.
 
 27. Select the **Sizes** tab.
 
-28. Select **New** in the **Define sizes for a product master** section.
+28. Select **+ New** in the **Define sizes for a product master** section.
 
 29. In the **Size** field, enter **Small**.
 
@@ -341,7 +344,7 @@ As supply chain manager, you will have to create 2 new products:
 
 31. In the **Description** field, enter **Small Size**.
 
-32. Select **New**.
+32. Select **+ New**.
 
 33. In the **Size** field, enter **Medium**.
 
@@ -349,7 +352,7 @@ As supply chain manager, you will have to create 2 new products:
 
 35. In the **Description** field, enter **Medium Size**.
 
-36. Select **New**.
+36. Select **+ New**.
 
 37. In the **Size** field, enter **Large**.
 
@@ -359,7 +362,7 @@ As supply chain manager, you will have to create 2 new products:
 
 40. Select the **Colors** tab.
 
-41. Select **New** in the **Define sizes for a product master** section.
+41. Select **+ New** in the **Define colors for a product master** section.
 
 42. In the **Color** field, enter **Black**.
 
@@ -367,7 +370,7 @@ As supply chain manager, you will have to create 2 new products:
 
 44. In the **Description** field, enter **Black color**.
 
-45. Select **New**.
+45. Select **+ New**.
 
 46. In the **Color** field, enter **Red**.
 
@@ -377,17 +380,15 @@ As supply chain manager, you will have to create 2 new products:
 
 49. Select **Save**.
 
-50. Close the form.
+50. Select **Back** to leave the form.
 
 51. Select **Released product variants** listed under the **Product master** section.
 
-52. Select **Variant suggestions** listed under the **Released product Variants** section.
+52. Select **Variant suggestions** listed under the **Released product variants** section.
 
-53. Select **Suggest all** from the **Variant suggestions** and then select **Select all** from the **Suggested variants**.
+53. Select **Suggest all** from the **Variant suggestions** section and then select **Select all** from the **Suggested variants** section.
 
 54. Select **Create**.
-
-Close all pages.
 
 
 Exercise \#4 Creating a BOM in the BOM designer (Bonus)
@@ -418,15 +419,17 @@ You will:
 1. Go to **Product information management \> Bills of materials and formulas \>
     Bills of materials**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Name** field, enter **High Quality Speaker**.
 
-4. In the **Site** field, enter **1**.
+4. In the **Site** field, enter or select **1**.
 
 5. In the **Item group** field, enter or select **Audio**.
 
-6. On the **Maintain** tab, select **Designer**.
+6. In the action bar, select **Bill of materials**.
+
+6. On the **Maintain** section, select **Designer**.
 
 7. Select **BOM lines**.
 
@@ -452,17 +455,23 @@ You will:
 
 18. Select **OK**.
 
-19. Close the page.
+19. Select **Save**.
 
-20. Refresh the page. This will allow the BOM lines to appear in the grid for the BOM.
+20. Select **Back** to leave the page.
 
-21. In the list of Bill of materials lines, find and select the row for **M0002
+21. Refresh the page. This will allow the BOM lines to appear in the grid for the BOM.
+
+22. In the list of Bill of materials lines, find and select the row for **M0002
     / Mid-Range Speaker Unit**.
 
-22. Set **Quantity** to **2.0000**.
+23. Set **Quantity** to **2.0000**.
 
-23. In the **Maintain** tab, select **Approval**. Select **000020, Julia Funderburk**.
+24. In the action bar, select **Bill of materials**.
 
-24. Select **OK**.
+25. In the **Maintain** section, select **Approval**. Select **000020, Julia Funderburk** and select **Select**.
 
-25. Close all pages.
+25. Select **OK**.
+
+26. Select **Save**.
+
+27. Select **Back** to leave the page.
