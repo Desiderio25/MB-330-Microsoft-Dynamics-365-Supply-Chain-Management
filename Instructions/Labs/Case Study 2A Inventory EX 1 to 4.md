@@ -64,9 +64,9 @@ data entities.
 
 ### Initialize stock levels in the warehouse using movement journals
 
-1. Go to **Inventory management \> Journal entries \> Items \> Movement**.
+1. In Microsoft Dynamics 365 Supply Chain Management, under **Modules**, go to **Inventory management \> Journal entries \> Items \> Movement**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Name** field, select the drop-down button to open the lookup.
 
@@ -79,7 +79,7 @@ data entities.
 
 6. Select **OK**.
 
-7. Select **New** in the **Journal lines** fast tab.
+7. Select **+ New** on the **Journal lines** section.
 
 8. In the **Item number** field, select the drop-down button to open the lookup.
 
@@ -99,7 +99,7 @@ data entities.
 
 16. In the **Quantity** field, enter a number.
 
-17. Review changes in the **Line details** FastTab.
+17. Review changes in the **Line details** fast tab.
 
 18. Select **Save**.
 
@@ -120,15 +120,15 @@ not license plate controlled.*
 
 ### Transfer physical inventory within the warehouse using transfer journals
 
-1. Go to **Inventory management\>Journal entries\>Items\>Transfer**.
+1. Go to **Inventory management \> Journal entries \> Items \> Transfer**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Name** field, enter or select **ITrf**.
 
 4. Select **OK**.
 
-5. Select **New** in the **Journal lines** fast tab.
+5. Select **New** in the **Journal lines** section.
 
 6. In the **Item number** field, enter or select **A0001**.
 
@@ -182,7 +182,7 @@ You will also need to adjust the stock levels of products in the warehouse.
 1. Go to **Inventory management \> Journal entries \> Items \> Inventory
     adjustment**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Name** field, select the drop-down button to open the lookup.
 
@@ -190,7 +190,7 @@ You will also need to adjust the stock levels of products in the warehouse.
 
 5. Select **OK**.
 
-6. Select **New** in the **Journal lines** fast tab.
+6. Select **New** in the **Journal lines** section.
 
 7. In the **Item number** field, select **D0001**.
 
@@ -200,7 +200,7 @@ You will also need to adjust the stock levels of products in the warehouse.
 
 10. In the **Warehouse** field, select the drop-down button to open the lookup.
 
-11. In the list, select **warehouse 13**. If you have selected an item with Location
+11. In the list, select the warehouse **13**. If you have selected an item with Location
     as a mandatory dimension, you would have to specify the location here.
 
 12. In the **Quantity** field, enter a number. The cost price field specifies
@@ -211,9 +211,9 @@ You will also need to adjust the stock levels of products in the warehouse.
 13. Select **Validate**.
 
 14. Select **OK**.
-    > **Note** that the Journal is OK, and select **Post**. When you post this kind of
-    journal, an inventory receipt or issue is posted, the inventory level and
-    value are changed, and ledger transactions are generated.
+    > **Note** If the journal passes validation successfully, a confirmation message indicates that the journal is OK. When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.
+
+15. Select **Post**.
 
 15. Select **OK**.
 
@@ -239,7 +239,7 @@ what to use.
 1. Go to **Inventory management \> Journal entries \> Item counting \>
     Counting**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Name** field, select the drop-down button to open the lookup.
 
@@ -253,7 +253,7 @@ what to use.
 
 8. Select **OK**.
 
-9. Select **New** in the **Journal lines** fast tab.
+9. Select **New** in the **Journal lines** section.
 
 10. In the **Item number** field, select the drop-down button to open the lookup.
 
