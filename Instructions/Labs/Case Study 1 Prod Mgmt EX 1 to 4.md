@@ -71,7 +71,7 @@ to help them creating the new warehouse.
 
 8. Select **Save**.
 
-9. Select **Back** to return the home page.
+9. Close all pages.
 
 ### Define the location name format
 
@@ -133,7 +133,7 @@ to help them creating the new warehouse.
 
 14. Select **Finish**.
 
-15. Select **Back** to return to the home page.
+15. Close all pages.
 
 Exercise \#2 Creating a standard cost version that uses a specific model group
 -------------------------------------------------------------------------------
@@ -164,7 +164,7 @@ items must be grouped based on FIFO inventory model.
 
 7. Select **Save**.
 
-8. Select **Back** to return to the home page.
+8. Close all pages.
 
 ### Create item model group
 
@@ -191,7 +191,7 @@ items must be grouped based on FIFO inventory model.
 
 11. Select **Save**.
 
-12. Select **Back** to return to the home page.
+12. Close all pages.
 
 
 ### Create tracking number group
@@ -257,7 +257,7 @@ items must be grouped based on FIFO inventory model.
 
 29. Select **Save**.
 
-30. Select **Back** to return to the home page.
+30. Close all pages.
 
 
 Exercise \#3 Adding and releasing new products to a warehouse
@@ -474,4 +474,4 @@ You will:
 
 26. Select **Save**.
 
-27. Select **Back** to leave the page.
+27. Close all pages.
