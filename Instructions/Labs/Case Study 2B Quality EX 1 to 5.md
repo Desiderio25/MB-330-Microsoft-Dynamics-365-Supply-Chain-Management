@@ -58,28 +58,26 @@ process the quality order.
 
 - Process quality orders.
 
+> **Important:**
+> Some records used in this lab may already exist in the environment. If you receive a message indicating that a record already exists, do not create a duplicate record. Instead, verify that the existing record matches the lab instructions and continue with the next step.
+
 ### Enable quality management
 
-1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse
-    management parameters**.
+1. In Microsoft Dynamics 365 Supply Chain Management, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 
 2. Select the **Quality management** tab.
 
 3. Set the **Use quality management** option to **Yes**.
 
-4. Select **Report setup**. In USMF, the report setup for quality management is
-    already defined. If this wasn’t done, you’d add new lines here for the
-    different report types, and select the type of document to be used for each
-    report.
+4. Select **Report setup**. In USMF, the report setup for quality management is already defined. If this wasn't done, you'd add new lines here for the different report types, and select the type of document to be used for each report.
 
 5. Close all pages.
 
 ### Create a test
 
-1. Go to **Inventory management** \> **Setup** \> **Quality control** \>
-    **Tests**.
+1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Tests**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Test** field, type **eBookTest**.
 
@@ -97,7 +95,7 @@ process the quality order.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test
     variables**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Variable** field, type **Power**.
 
@@ -107,7 +105,7 @@ process the quality order.
 
 6. Select **Outcomes**.
 
-7. Select **New**.
+7. Select **+ New**.
 
 8. In the **Outcome** field, type **ON**.
 
@@ -134,7 +132,7 @@ process the quality order.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Item
     sampling**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Item sampling** field, type **One**.
 
@@ -143,12 +141,12 @@ process the quality order.
 5. In the **Quantity specification** field select **Fixed quantity**.
 
 6. In the **Value** field, enter **1**.
-     >**Note** This value relates to the Quantity specification that’s selected in the adjacent field.
+     >**Note:** This value relates to the Quantity specification that’s selected in the adjacent field.
 
 7. Expand or collapse the **Process** section.
 
 8. Select or clear the **Full blocking** option.
-     >**Note** If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.
+     >**Note:** If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.
 
 9. Select **Save**.
 
@@ -159,7 +157,7 @@ process the quality order.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \>
     **Quality groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Quality group** field, type **eBookQG**.
 
@@ -185,7 +183,7 @@ process the quality order.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \> **Test
     groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Test group** field, type **eBookTG**.
 
@@ -193,7 +191,7 @@ process the quality order.
 
 5. In the **Item sampling** field, select **One**.
 
-6. Under the **Overview** tab, select **Add**.
+6. Under the **Overview** tab, select **+ Add**.
 
 7. In the **Sequence number** field, enter **1**.
 
@@ -214,9 +212,9 @@ process the quality order.
 1. Go to **Inventory management** \> **Setup** \> **Quality control** \>
     **Quality associations**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. In the **Reference** type field, select **Sales**.
+3. In the **Reference type** field, select **Sales**.
 
 4. In the **Item code** field, select **Group**.
 
@@ -224,7 +222,7 @@ process the quality order.
 
 6. Expand the **Process** FastTab.
 
-7. In the **Event** type field, select **Picking process is scheduled**.
+7. In the **Event type** field, select **Picking process is scheduled**.
 
 8. Expand the **Quality order process** FastTab.
 
@@ -242,11 +240,11 @@ process the quality order.
 
 Before you begin this exercise, blocking rules would need to be enabled for processing quality orders.
 
->**NOTE** There's an exclusion on sales orders lesser than $10,000 for all customers. The sales order may provide an informational message that the order amount may be less than or equal to the sales order exclusion amount in the sales order rule and will not be sent to credit management. Before the execution of this task, view blocking rules and exclusion rules on the **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules page**.
+> **Note:** There's an exclusion on sales orders lesser than $10,000 for all customers. The sales order may provide an informational message that the order amount may be less than or equal to the sales order exclusion amount in the sales order rule and will not be sent to credit management. Before the execution of this task, view blocking rules and exclusion rules on the **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules page**.
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Customer account** field, select **US-013**.
 
@@ -254,71 +252,79 @@ Before you begin this exercise, blocking rules would need to be enabled for proc
 
 5. In the **Item number** field, enter or select **T0002**.
 
+   > **Note:** If you receive the error **"Cannot find enabled pricing tree. Correct pricing tree setup."**, create and enable a price tree in **Pricing management** > **Setup** > **Price setup** > **Price trees**, and then retry the sales order.
+
 6. On the Action Pane, select **Pick and pack**.
 
 7. Select **Quality orders**.
 
-    >**Note** There are no quality order for this customer.
+   > **Note:** There are no quality order for this customer.
 
 8. Close the page.
 
-9. Select **Generate picking list**.
+9. Select **Complete** on the Action bar to complete the picking process.
 
-10. Select **OK**.
+10. Select **Submit**.
 
-11. Select **OK**.
-
-    >**Note** A message may appear stating "You are about to post the document without printing it. Select OK to continue." Read the error message details generated preventing you from continuing the process of picking and packing because you now have a quality order.
+11. On the action bar, select **Pick and pack**, then select **Generate picking list**.
 
 12. Select **OK**.
 
-13. Select **Quality orders**.
+13. Select **OK**.
 
-    >**Note** A quality order has been automatically generated.
+    > **Note:** A message may appear stating "You are about to post the document without printing it. Select OK to continue." Read the error message details generated preventing you from continuing the process of picking and packing because you now have a quality order.
 
-14. Review the test.
+14. Select **Quality orders**.
 
-15. Select **Results**.
+    > **Note:** A quality order should be generated automatically. If no quality order is generated, create one manually:
+    >
+    > 1. Select **+ New**.
+    > 2. In the **Test group** field, select **eBookTG**.
+    > 3. In the **Reference lot** field, select the sales order line for item **T0002**.
+    > 4. Verify that **T0002** appears in the **Item number** field and that the **Quantity** is **1.00**.
+    > 5. Select **OK**.
+    >
+    > The quality order should now be ready for processing.
 
-16. Set **Result quantity** to **1**.
+15. Review the test.
 
-17. Set **Outcome** to **ON**.
+16. Select **Results**.
 
-18. Select **Validate** to validate the quality order line results for the test.
+17. Set **Result quantity** to **1**.
 
-19. Close the page.
+18. Set **Outcome** to **ON**.
 
-20. Select **Validate** to validate the quality order.
+19. Select **Validate** to validate the quality order line results for the test.
 
-    >**Note** The process operation has removed the error as the the test results of the quality order test passed.
+20. Close the page.
 
-21. Select **OK**.
+21. Select **Validate** to validate the quality order.
 
-22. Close the quality order page.
+    >**Note:** The process operation has removed the error as the the test results of the quality order test passed.
 
-23. Select **Generate picking list** to post picking list.
+22. Select **OK**.
 
-24. Select **OK**.
+23. Close the quality orders page.
 
-25. Select **OK**.
+24. Once back on the **Sales order** page, clear the messages via the X.
 
-26. Once back on the **Sales order** page, clear the messages via the X.
+25. Select **Picking list registration**.
 
-27. Select **Picking list registration**.
+26. Select **Updates**.
 
-28. Select **Updates**.
+27. Select **Update all**.
 
-29. Select **Update all**.
+28. Select **Save**.
 
-30. Close the form.
+29. Close the form.
 
-31. Select **Post packing slip**.
+30. Select **Post packing slip**.
+
+31. Select **OK**.
 
 32. Select **OK**.
 
-33. Select **OK**.
-
-34. Close all pages.
+33. Close all pages.
 
 Exercise \#2 Create a manual quality order with a specification
 ---------------------------------------------------------------
@@ -343,7 +349,7 @@ You will need to do the following:
 1. Open **Inventory management** \> **Periodic tasks** \> **Quality management** \>
     **Quality orders**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Select **Inventory** as the **Reference type**.
 
@@ -391,7 +397,7 @@ Add a quarantine zone.
 1. Open **Inventory management \> Setup \> Quality management \> Problem
     types.**
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Enter **Temperature** in both **Problem type** and **Description** fields.
 
@@ -402,7 +408,7 @@ Add a quarantine zone.
 1. Open **Inventory management \> Setup \> Quality management \> Diagnostic
     types.**
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Enter **Machine temperature** in both **Diagnostic** and **Description**
     fields.
@@ -411,7 +417,7 @@ Add a quarantine zone.
 
 5. Open **Inventory management \> Setup \> Quality management \> Operations.**
 
-6. Select **New**.
+6. Select **+ New**.
 
 7. Enter **Adjustment temp** in both **Operation** and **Description** fields.
 
@@ -422,7 +428,7 @@ Add a quarantine zone.
 10. Open **Inventory management \> Setup \> Quality management \> Quality
     charges.**
 
-11. Select **New**.
+11. Select **+ New**.
 
 12. Enter **Repair** in both **Problem type** and **Description** fields.
 
@@ -460,13 +466,13 @@ You will need to do the following:
 1. Open **Inventory management \> Periodic tasks \> Quality management \> Non
     Conformances**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Select **Internal** in **Non conformance** field.
+3. Select **Internal** in **Non conformance type** field.
 
-4. Enter **1000** in the **Item number** field.
+4. Enter or select **1000** in the **Item number** field.
 
-5. Enter **Enclosure** as the problem type.
+5. Enter or select **Enclosure** as the problem type.
 
 6. Enter **5.00** in the **Defective quantity** field.
 
@@ -476,14 +482,13 @@ You will need to do the following:
 
 9. Select **OK.**
 
-10. Select the **Function** button (you may need to select the ellipsis toward the
-    top right of the screen) and select **Approve non conformance.**
+10. On the action bar, select the **Functions** drop-down, and then select **Approve non conformance.**
 
 11. Select **Yes.**
 
 12. Select the **Related operations** button.
 
-13. Select **New.**
+13. Select **+ New**
 
 14. Select **Enclosure** in the **Operation** field.
 
@@ -493,7 +498,7 @@ You will need to do the following:
 
 17. Select the **Items** button.
 
-18. Select **New.**
+18. Select **+ New**
 
 19. Select **A0001** as the item number.
 
@@ -503,7 +508,7 @@ You will need to do the following:
 
 22. Select **Quality Charges** button.
 
-23. Select **New.**
+23. Select **+ New**
 
 24. Select **Rework** in the **Charges code** field.
 
@@ -515,7 +520,7 @@ You will need to do the following:
 
 28. Select **Timesheet** button.
 
-29. Select **New.**
+29. Select **+ New**
 
 30. Enter **5.0** in the **Operation hours** field.
 
@@ -525,7 +530,7 @@ You will need to do the following:
 
 33. Select the **Corrections** button.
 
-34. Select **New.**
+34. Select **+ New**
 
 35. Select **Machine adjustment** in the **Diagnostic** field.
 
@@ -540,7 +545,7 @@ You will need to do the following:
 
 40. Select **OK** and close the form.
 
-41. Select the **Functions** button and select **Close non conformance**.
+41. Select the **Functions** drop-down and select **Close non conformance**.
 
 42. Select **Yes.**
 
