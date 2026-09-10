@@ -20,6 +20,8 @@ Case study instructions
 
 - **Bonus exercises** are exercises that students can practice on their own, if there is time permitting.
 
+- These labs use demo data that can vary between environments. Some records, values, and options referenced in the exercises might differ from what is available in your environment. If a specific value is unavailable, select a similar available option and continue with the exercise. If a record already exists, do not create a duplicate. Verify that the existing record matches the exercise requirements and continue with the next step.
+
 Supply chain management case studies
 ----------
 

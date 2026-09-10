@@ -48,7 +48,7 @@ of new products.
 Your customer is managing a small warehouse that does not require the full
 capabilities of warehouse management systems (WMS).
 
-you and the Solution architect are in favor of using basic inventory management
+You and the Solution architect are in favor of using basic inventory management
 to help them creating the new warehouse.
 
 **What would you do?**

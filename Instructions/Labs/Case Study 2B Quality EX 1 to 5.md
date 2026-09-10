@@ -58,9 +58,6 @@ process the quality order.
 
 - Process quality orders.
 
-> **Important:**
-> Some records used in this lab may already exist in the environment. If you receive a message indicating that a record already exists, do not create a duplicate record. Instead, verify that the existing record matches the lab instructions and continue with the next step.
-
 ### Enable quality management
 
 1. In Microsoft Dynamics 365 Supply Chain Management, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
