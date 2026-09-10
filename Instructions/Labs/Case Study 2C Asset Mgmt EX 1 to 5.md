@@ -49,10 +49,10 @@ You'll set up new assets for Munson's Pickles and Preserves Farm in Asset Manage
 
 8. On the **Maintenance job types** FastTab, select **Calibration**, **Inspection**, **Lubrication**, **Preventive**, and **Repair**. Then select the right arrow **(→)** to move the selected job types to the **Maintenance job types selected** section.
 
-    > **Note** 
+    > [!NOTE] 
     > To select job types in the **Maintenance job types** FastTab, you must have created the **Maintenance job types**. In **Asset Management**, select **Setup** \> **Jobs** \> **Maintenance job types**.
 
-9. On the **Counters** FasttTab select the **Production Hours**.
+9. On the **Counters** FastTab select the **Production Hours**.
 
 10. Select the right arrow **(→)** to move the counter for **Production Hours** to the **Asset counters selected** section. You won't be adding an Attribute type at this time.
 
@@ -181,7 +181,7 @@ You'll assist the IT manager in doing the following:
 
 5. In the **Name** field, enter **Closed – Not in use**. 
 
-   > **Note**  
+   > [!NOTE] 
    > When you're creating a new lifecycle state, the Lifecycle model field will not be populated. When this lifecycle state is added to a lifecycle model, this field automatically populates to show the number of lifecycle models that this state is included in.
 
 6. Select the **General** FastTab, then set **Active** to **Yes**.
@@ -192,7 +192,7 @@ You'll assist the IT manager in doing the following:
 
 9. Set **Install assets at locations** to **No**.
 
-    > **Note**
+   > [!NOTE] 
    > When initially building your lifecycle states, you won't have any information yet to select from the **Asset state > Lifecycle state** dropdown menu until you've completed the full configuration for your assets, including the asset lifecycle states. Leave this field blank for now.
 
 10. Select **Save**. Your new functional location lifecycle state has been created and activated.
@@ -383,7 +383,7 @@ You're tasked with setting up the fault symptoms, fault area, and fault type in 
 
 6. Select **Save**.
 
-   > **Note:** 
+   > [!NOTE] 
    > If lines are not already included, use **+ Add line** in each FastTab to add the respective entries.
 
 ---
