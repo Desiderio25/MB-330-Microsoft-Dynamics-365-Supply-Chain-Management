@@ -106,6 +106,7 @@ data entities.
 19. Select **Post**.
 
 20. Toggle on or toggle off the **Transfer all posting errors to a new journal** field.
+    
     > **Note:** If you enable this option, any lines that fail to post will be copied to a new journal. You can use the information in the log to correct the issues and then re-post the lines.
 
 21. Select **OK**.
@@ -211,6 +212,7 @@ You will also need to adjust the stock levels of products in the warehouse.
 13. Select **Validate**.
 
 14. Select **OK**.
+    
     > **Note:** If the journal passes validation successfully, a confirmation message indicates that the journal is OK. When you post this kind of journal, an inventory receipt or issue is posted, the inventory level and value are changed, and ledger transactions are generated.
 
 15. Select **Post**.

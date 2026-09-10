@@ -24,9 +24,6 @@ Objectives
 
 - Create workers.
 
-> **Important:**
-> Some records used in this lab may already exist in the environment. If you receive a message indicating that a record already exists, do not create a duplicate record. Instead, verify that the existing record matches the lab instructions and continue with the next step.
-
 Exercise \#1 Set up assets
 ----------------------------
 
