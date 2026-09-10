@@ -61,47 +61,43 @@ help her to use?**
 
 ### Create and process a purchase requisition
 
-1. Go to **Procurement and sourcing**, then to **Purchase requisitions**, and
-    then to **All purchase requisitions**.
+1. In Microsoft Dynamics 365 Supply Chain Management, go to **Procurement and sourcing \> Purchase requisitions \> All purchase requisitions**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Name: Enter **New HDMI Cables**.
+3. For **Name** enter **New HDMI Cables**.
 
 4. Select **OK**.
 
-5. Reason: Select **General** (General supplies).
+5. For **Reason** select **General supplies**.
 
-6. Details: Enter **New, longer HDMI cables**.
+6. For **Details** enter **New, longer HDMI cables**.
 
 ### Add an item to the purchase requisition
 
 1. Select **Add products** in the **Purchase requisition lines** FastTab.
 
-2. Select the **Computers** procurement category (a subcategory of Office
-    Machines).
+2. Expand the **Office Machines** procurement category, and then select **Computers**.
 
-3. Under **Select From Filtered List**, select the ellipsis and select **Add unlisted product to lines**.
+3. Under **Select From Filtered List**, expand **Add unlisted product to lines**.
 
-4. Product name: Enter **24in HDMI Cable**.
+4. For **Product name** enter **24in HDMI Cable**.
 
-5. Unit: Enter **ea**.
+5. For **Unit** enter **ea**.
 
 6. Select **OK**.
 
-7. Change to the **Line details** tab.
+7. Verify the **Lines to add to purchase requisition** section.
 
-8. Product name: enter **24-inch HDMI cable**.
+8. For **Product name** enter **24-inch HDMI cable**.
 
-9. Quantity: Enter **5**.
+9. For **Quantity** enter **5**.
 
 10. Unit price: Enter **41.49**.
 
-11. Vendor Account: Select **1001** (Acme Office Supplies).
+11. For **Vendor Account** select **100001** (Syrup Supplies Co.).
 
 12. Select **OK**.
-
-13. Select **Save**.
 
 ### Submit the purchase requisition created in the previous practice for approval, and perform the approval process
 
@@ -111,13 +107,13 @@ help her to use?**
 
 3. Select **Workflow** at the top, and then select **Submit**.
 
-4. Comment: Enter **Request for longer HDMI cables.**
+4. For **Comment** enter **Request for longer HDMI cables.**
 
 5. Select **Submit**.
 
 6. Select **Workflow \> Workflow history**
 
-7. Select **Refresh a** few times and wait until the work items shows records.
+7. Select **Refresh** a few times and wait until the **Work items** section shows records.
 
 8. Select **Reassign** button.
 
@@ -125,9 +121,11 @@ help her to use?**
 
 10. Select **Reassign**. Notice the work item has been reassigned to a new worker.
 
-11. Select **Refresh.**
+11. Select **Refresh**.
 
 12. Close the **Workflow history** page.
+
+> **Note:** After you submit the purchase requisition, its status might change to **In review** without a workflow work item being generated. If the **Work items** section on the **Workflow history** page is empty, the **Reassign** and **Approve** actions aren't available. In this case, continue to the next exercise.
 
 ### Approve the purchase requisition
 
@@ -166,15 +164,15 @@ You will have to do the following:
 1. Go to **Procurement and sourcing** \> **Requests for quotations** \>
     **All requests for quotations**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Purchase type: Select **Purchase order**.
+3. For **Purchase type** select **Purchase order**.
 
-4. Document title: Enter **HDMI Cables**.
+4. For **Document title**, enter **HDMI Cables**.
 
-5. Site: Select **1** (Home speakers production).
+5. For **Site**, select **1** (Home speakers production).
 
-6. Warehouse: Select **13** (Site 1 – Finished Goods).
+6. For **Warehouse**, select **13** (Site 1 – Finished Goods).
 
 7. Select **OK**.
 
@@ -182,25 +180,25 @@ You will have to do the following:
 
 1. If necessary, select **Add line** to add a line to the list.
 
-2. Line type: Select **Item**.
+2. For **Line type**, select **Item**.
 
-3. Item number: Select **A0001** (HDMI 6’ Cables).
+3. For **Item number**, select **A0001** (HDMI 6’ Cables).
 
-4. Quantity: Enter **500**.
+4. For **Quantity**, enter **500**.
 
 5. Select **Save**.
 
-6. Select **Header view**.
+6. Select **Header**.
 
-7. Open the **Vendor** FastTab.
+7. Verify the **Vendor** FastTab.
 
 8. If necessary, select **Add** to add a line to the list.
 
-9. Vendor account: Select **US-111** (Contoso office supply).
+9. For **Vendor account**, select **US-111** (Contoso office supply).
 
-10. Select **Add**.
+10. Select **+ Add**.
 
-11. Vendor account: Select **US-103** (Rain Projectors).
+11. For **Vendor account**, select **US-103** (Rain Projectors).
 
 12. Select **Save**.
 
@@ -217,30 +215,30 @@ Update the request for the quotation created in the previous practice with the
 vendor responses.
 
 1. Make sure that the permission to edit vendor bids is setup. Go to the **Procurement and sourcing** \> **Setup** \> **Procurement and sourcing parameters**.
+
 2. On the **Request for quotations** tab, toggle on the **Purchaser can edit vendors bid** option to **Yes**.
-3. Select **Save**
+
+3. Select **Save**.
 
 ### Process the quotation for US-103. Enter the vendors’ replies to the request for quotation
 
-1. Go to the **Procurement and sourcing** \> **Requests for
-    quotations** \> **All requests for quotations**.
+1. Go to the **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
 
 2. Open the request for quotation previously created.
 
 3. Select **Header**.
 
-4. Select the **Vendor** FastTab.
+4. Go to the **Vendor** FastTab.
 
-5. Select the **Request for quotation** number for **US-111** (Contoso office
-    supply).
+5. Select the **Request for quotation** number for **US-111** (Contoso office supply).
 
 6. Select **Manage reply**. Select the **Edit** at the top, from the drop-down menu select **Edit RFQ reply**  
 
-7. Quantity: Enter **500**.
+7. For **Quantity**, enter **500**.
 
-8. Unit: Enter **ea**.
+8. For **Unit**, enter **ea**.
 
-9. Unit price: Enter **10.00**.
+9. For **Unit price**, enter **10.00**.
 
 10. Select **Save**.
 
@@ -248,15 +246,15 @@ vendor responses.
 
 12. Close the **Request for Quotation** page.
 
-13. Select the **Request for quotation** number for **US-103** (Rain Projectors).
+13. Select the **Request for quotation** number for **US-103** (Rain Projectors), on the **Vendor** FastTab
 
-14. Navigate back to **Vendor** FastTab. Select the **Request for quotation** number for **US-103** (Rain Projectors). Select **Manage reply**. Select the **Edit** at the top, from the drop-down menu select **Edit RFQ reply**
+14. Select **Manage reply**. Select the **Edit** at the top, from the drop-down menu select **Edit RFQ reply**
 
-15. Quantity: Enter **500**.
+15. For **Quantity**, enter **500**.
 
-16. Unit: Enter **ea**.
+16. For **Unit**, enter **ea**.
 
-17. Unit price: Enter **8.00**.
+17. For **Unit price**, enter **8.00**.
 
 18. Select **Save**.
 
@@ -264,23 +262,21 @@ vendor responses.
 
 ### Accept a vendor’s reply
 
-1. Go to the **Procurement and sourcing** \> **Requests for quotations** \> **All requests for quotations**.
+1. Go to the **Procurement and sourcing \> Requests for quotations \> All requests for quotations**.
 
 2. Open the request for quotations created in the previous practice.
 
 3. Select **Header**.
 
-4. Select the **Vendor** FastTab.
+4. Locate the **Vendor** FastTab.
 
 5. Select the **Request for quotation** number for **US-103** (Rain Projectors).
 
-6. Select **Manage reply**. Select the **Edit** at the top, from the drop-down menu select **Edit RFQ reply**
+6. Select **Manage reply**. Select **Edit** at the top, from the drop-down menu select **Edit RFQ reply**
 
-7. Select **Submit** form the top menu.
+7. Select **Submit** from the top menu.
 
-8. Select **Accept** under the **Process** section.
-
-9. Select **OK**.
+8. In the confirmation dialog, select **Close**.
 
 Exercise \#3 Create purchase requisition and purchasing policies (Bonus)
 ------------------------------------------------------------------------
@@ -302,34 +298,33 @@ He reached out for help and you will have to do the following:
 
 ### Create a purchase requisition permission policy
 
-1. Go to **Procurement and sourcing** \> **Setup** \> **Policies** \> **Purchase requisition permissions**.
+1. Go to **Procurement and sourcing \> Setup \> Policies \> Purchase requisition permissions**
 
 2. Select **Mike Danseglio** in the list of workers.
 
 3. Change to the **Requester** FastTab.
 
-4. Select **Add**.
+4. Select **+ Add**.
 
-5. Name: Search for **Susan Burk** and then **Select**.
+5. For **Name**, search for **Susan Burk** and then **Select**.
 
 6. Select **Save**.
 
 ### Create a purchasing policy
 
-1. Go to the **Procurement and sourcing** module, then to **Setup**, then to
-    **Policies**, and then to **Purchasing policies**.
+1. Go to the **Procurement and sourcing \> Setup \> Policies \> Purchasing policies**.
 
 2. Select **Procurement Policy USMF**.
 
-3. Select the **Policy rules** FastTab.
+3. Expand the **Policy rules** FastTab.
 
 4. In the **New** tab on the Action Pane, select **Policy**.
 
-5. Name: Enter **Office Supplies**.
+5. For **Name**, enter **Office Supplies**.
 
-6. Description: Enter **Office supplies policies**.
+6. For **Description**, enter **Office supplies policies**.
 
-7. Policy rule type: Select **Category access policy rule(3)**.
+7. For **Policy rule type**, select **Category access policy rule(x)**.
 
 8. Select **Create policy rule** in the **Policy rules** section on the right.
 
@@ -339,7 +334,9 @@ He reached out for help and you will have to do the following:
 
 11. Select **OK**.
 
-12. Select **Save**.
+12. For **Effective date**, select a future hour.
+
+13. Select **Save**.
 
 Exercise \#4 Create a purchase order for delivery to multiple sites
 -------------------------------------------------------------------
@@ -350,8 +347,7 @@ delivered to a different site.*
 The purchasing clerk at USMF wants to create one purchase order for a quantity
 of 5 of item T0003 (surround sound receiver) from Acme Office Supplies, to be
 delivered today to Site 1, and a quantity of 5 of item M1101 (foam reacting
-agent) to be delivered to the Quality Testing Center, 123 W. Cherry Street, zip
-code 83642.
+agent) to be delivered to the Quality Testing Center, 123 W. Cherry Street, zip code 83642.
 
 He is not clear how to perform this using the system and asking your help
 
@@ -361,54 +357,53 @@ He is not clear how to perform this using the system and asking your help
 
 1. Go to the **Procurement and sourcing** \> **Purchase orders** \> **All purchase orders**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Vendor account: Select **1001** (Acme Office Supplies).
+3. For **Vendor account** select **1001** (Acme Office Supplies).
 
-4. Delivery date: Expand the **General** tab, verify the current date in the **Requested receipt date** field (this should be the default value).
+4. For Delivery date, expand the **General** tab, verify the current date in the **Requested receipt date** field (this should be the default value).
 
 5. Select **OK**.
 
 6. Add items to the purchase order:
 
-    1. Item number: Select **T0003** (SurroundSoundReceive).
+    1. For **Item number** select **T0003** (Café A -200 Automatic).
 
-    2. Quantity: Enter **5**.
+    2. For **Quantity** enter **5**.
 
-    3. Unit: Enter **ea**.
+    3. For **Unit** enter **ea**.
 
-    4. Select **Add line**.
+    4. Select **+ Add line**.
 
-    5. Item number: Select **M1101** (Foam reacting agent).
+    5. For **Item number** select **M1101** (Foam reacting agent).
 
-    6. Quantity: Enter **5**.
+    6. For **Quantity** enter **5**.
 
-    7. Unit: Enter **PL**.
+    7. For **Unit** enter **PL**.
 
 7. Select delivery addresses for the items:
 
-    1. Select the line for item **T0003** (SurroundSoundReceive) in the
+    1. Select the line for item **T0003** (Café A -200 Automatic) in the
         **Purchase order lines** FastTab.
 
-    2. Open the **Line details** FastTab.
+    2. Expand the **Line details** FastTab.
 
-    3. Change to the **Address** tab.
+    3. Select the **Address** tab.
 
-    4. Delivery address: Select **Contoso Entertainment System USA**.
+    4. Select **Contoso USMF HQ** in the **Delivery address** field.
 
     5. Select the line for item **M1101** (Foam reacting agent) in the
         **Purchase order lines** FastTab.
 
-    6. Change to the **Line details** FastTab.
+    6. Select the **Line details** FastTab.
 
-    7. Select the **Add address** button (**+**) to the right of the Delivery
-        address field.
+    7. Select the **Add address** button (**+**) to the right of the **Delivery address** field.
 
-    8. Name or description: Enter **Quality Testing Center**.
+    8. Enter **Quality Testing Center** in the **Name or description** field.
 
-    9. Zip/postal code: Enter **83642**.
+    9. Enter **83642** in the **Zip/postal code** field.
 
-    10. Street: Enter **123 W. Cherry Street**.
+    10. Enter **123 W. Cherry Street** in the **Street** field.
 
     11. Select **OK**.
 
@@ -418,18 +413,20 @@ He is not clear how to perform this using the system and asking your help
 
 10. Select **Actions** > **Confirm**.
 
-11. On the Action Pane, select **Receive**.
+11. Select **OK**.
 
-12. Select **Generate** \> **Product receipt**.
+12. On the Action Pane, select **Receive**.
 
-13. Select **Registered quantity** in the **Quantity** field.
+13. Select **Generate** \> **Product receipt**.
 
-14. In the **Product receipt** field, enter the product receipt number. For
+14. Select **Registered quantity** in the **Quantity** field.
+
+15. In the **Product receipt** field, enter the product receipt number. For
     example, enter **PR123**.
 
-15. Select **OK** to post the product receipt.
+16. Select **OK** to post the product receipt.
 
-16. Close all pages.
+17. Close all pages.
 
 Exercise \#5 Create a charges code
 ----------------------------------
@@ -458,23 +455,23 @@ specifications:
 
 1. Go to the **Accounts payable** \> **Charges setup** \> **Charges code**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Charges code: Enter **TRANSTO**.
+3. For **Charges code**, enter **TRANSTO**.
 
-4. Description: Enter **Transportation Fee to our sites**.
+4. For **Description**, enter **Transportation Fee to our sites**.
 
-5. Change to the Debit section.
+5. Go to the **Debit** section.
 
-6. Type: Select **Ledger account**.
+6. For **Type**, select **Ledger account**.
 
-7. Posting: Select **Payment fee**.
+7. For **Posting**, select **Payment fee**.
 
-8. Account: Select **411400**.
+8. For **Account**, select **411400**.
 
-9. Change to the Credit section.
+9. Go to the **Credit** section.
 
-10. Type: Select **Customer/Vendor**.
+10. For **Type**, select **Customer/Vendor**.
 
 11. Select **Save**.
 
@@ -503,26 +500,25 @@ You will have to do the following:
 
 1. Go to the **Accounts payable** \> **Charges setup** \> **Vendor charges group**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Charges group: Enter **06**.
+3. For **Charges group**, enter **06**.
 
-4. Description: Enter **Freight 15%**.
+4. For **Description**, enter **Freight 15%**.
 
 5. Select **Save**.
 
 ### Update vendors to use the new vendor charges group
 
-1. Go to the **Accounts payable** \> **Vendors** \>
-    **All vendors**.
+1. Go to the **Accounts payable \> Vendors \> All vendors**
 
 2. Open the vendor record for vendor **US-101** (Fabrikam Electronics).
 
 3. Select **Edit**.
 
-4. Open the **Purchase order defaults** FastTab.
+4. Expand the **Purchase order defaults** FastTab.
 
-5. Charges group: Select **06** (Freight 15%).
+5. For **Charges group**, select **06** (Freight 15%).
 
 6. Select **Save**.
 
@@ -534,7 +530,7 @@ You will have to do the following:
 
 10. Open the **Purchase order defaults** FastTab.
 
-11. Charges group: Select **06** (Freight 15%).
+11. For **Charges group**, select **06** (Freight 15%).
 
 12. Select **Save**.
 
@@ -566,11 +562,11 @@ You will have to do the following:
 
 1. Go to the **Accounts payable** \> **Charges setup** \> **Item charge groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Charges group: Enter **123**.
+3. For **Charges group**, enter **123**.
 
-4. Description: Enter **15% Freight Charge**.
+4. For **Description**, enter **15% Freight Charge**.
 
 5. Select **Save**.
 
@@ -578,27 +574,27 @@ You will have to do the following:
 
 1. Go to the **Accounts payable** \> **Charges setup** \> **Automatic charges**.
 
-2. Level: Select **Line**.
+2. For **Level**, select **Line**.
 
-3. Select **New**.
+3. Select **+ New**.
 
-4. Account code: Select **Group**.
+4. For **Account code**, select **Group**.
 
-5. Vendor relation: Select **06** (Freight 15%).
+5. For **Vendor relation**, select **06** (Freight 15%).
 
-6. Item code: Select **Group**.
+6. For **Item code**, select **Group**.
 
-7. Item Relation: Select **123** (15% Freight Charge).
+7. For **Item relation**, select **123** (15% Freight Charge).
 
 8. Select **Save**.
 
 9. Select **Add** in the **Lines** FastTab.
 
-10. Charges code: Select **TRANSTO** (Transportation Fee).
+10. For **Charges code**, select **TRANSTO** (Transportation Fee).
 
-11. Category: Select **Percent**.
+11. For **Category**, select **Percent**.
 
-12. Charges value: Enter **15.00**.
+12. For **Charges value**, enter **15.00**.
 
 13. Select **Save**.
 
@@ -620,21 +616,17 @@ You will have to do the following:
 
 ### Set up change management against Supplier 1001 only
 
-1. Go to **Procurement and sourcing** \> **Setup** \>
-    **Procurement and sourcing parameters**.
+1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 
 2. Select the **General** tab on the left.
 
-3. Change to the **Change Management for Purchase Orders** section.
+3. On the **Change Management for Purchase Orders** section,  select **Yes** for **Allow override of settings per vendor**.
 
-4. Allow override of settings per vendor: Select **Yes**.
-
-5. Select **Save**.
+4. Select **Save**.
 
 ### Configure change management for a vendor
 
-1. Go to **Procurement and sourcing**, then to **Vendors**, and then to **All
-    vendors**.
+1. Go to **Procurement and sourcing \> Vendors \> All vendors**.
 
 2. Open the vendor record for vendor **1001** (Acme Office Supplies).
 
@@ -642,11 +634,11 @@ You will have to do the following:
 
 4. Select **Edit**.
 
-5. Go to the **Change Management for Purchase Orders** section.
+5. Go to the **Change Management for Purchase Orders** section in the **Purchase order defaults** FastTab.
 
-6. Override settings: Select **Yes**.
+6. For **Override settings**, select **Yes**.
 
-7. Activate change management: Select **Yes**.
+7. For **Activate change management**, select **Yes**.
 
 8. Select **Save**.
 
@@ -659,46 +651,47 @@ price for a certain item.*
 The company managed to standardize the purchase price for item A0001 with all
 domestic vendors to be \$8.26. You needto help the purchase manager to record
 this purchase price using a trade agreement journal, so that whenever a purchase
-order is created for item A0001 and the vendor is from the domestic vendors, the
-price will default to \$8.26.
+order is created for item A0001 and the vendor is from the domestic vendors, the price will default to \$8.26.
 
 ### Create a Trade agreement for a vendor
 
 1. Go to **Procurement and sourcing** \> **Prices and discounts** \> **Trade agreement journals**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Name: Select **S_Price** for Sales price adjustment
+3. For **Name**, select **S_Price** for Sales price adjustment
 
 4. Select the **Lines** button to open the journal.
 
-5. Relation: Select **Price (purch.)**.
+5. For **Relation**, select **Price (purch.)**.
 
-6. Account code or Party code type: Select **Group**.
+6. For **Account code** or **Party code type**, select **Group**.
 
-7. Account selection: Select **Domestic** vendors.
+7. For **Account selection**, select **Domestic** vendors.
 
-8. Item code/Product code type: Select **Table**.
+8. For **Item code/Product code type**, select **Table**.
 
-9. Item Relation: Select **A0001, HDMI 6' Cables**.
+9. For **Item Relation**, select **A0001, HDMI 6' Cables**.
 
-10. Site: Enter **1**.
+10. For **Site**, enter or select **1**.
 
-11. Warehouse: Enter **13**.
+11. For **Warehouse**, enter **13**.
 
-12. From: Enter **1**.
+12. For **From**, enter **1**.
 
-13. Amount in currency: Enter **8.26**.
+13. For **Amount in currency**, enter **8.26**.
 
-14. Change to the **Details** tab.
+14. Expand the **Details** tab.
 
-15. From date: Select **February 15, 2017**.  
+15. For **From date**, select **February 15, 2017**.  
 
-16. Select **Validate** \> **Validate all lines**.
+16. Select **Validate \> Validate all lines**.
 
 17. Select **OK**.
 
-18. After successful validation, **post** the journal.
+18. After successful validation, select **Post**.
+
+19. Select **OK**.
 
 19. Close all pages.
 
@@ -723,48 +716,49 @@ What would you do?**
 
 ### Create a purchase agreement
 
-1. Go to the **Procurement and sourcing** \> **Purchase
-    agreements** \> **Purchase agreements**.
+1. Go to the **Procurement and sourcing \> Purchase agreements \> Purchase agreements**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Vendor account: Select **US-104** (Fabrikam Supplier).
+3. For **Vendor account** select **US-104** (Fabrikam Supplier).
 
-4. Purchase agreement classification: Select **General purchases**.
+4. For **Purchase agreement classification**, select **General purchases**.
 
-5. Open the **General** FastTab.
+5. Expand the **General** FastTab.
 
-6. Document title: Enter **General Purchase**.
+6. For **Document title**, enter **General Purchase**.
 
-7. Default commitment: Select **Product quantity commitment**.
+7. For **Default commitment**, select **Product quantity commitment**.
 
 8. Select **OK**.
 
 ### Add an item to the purchase agreement
 
-1. Select **Add line** in the **Purchase agreement lines** FastTab to create a
-    line.
+1. Select **Add line** in the **Purchase agreement lines** FastTab to create a line.
 
-2. Item number: Select **D0002** (Cabinet).
+2. For **Item number**, select **D0002** (Cabinet).
 
-3. Site: Select **1** (Home speakers production).
+3. For **Site**, select **1** (Home speakers production).
 
-4. Warehouse: Select **13** (Finished Goods).
+4. For **Warehouse**, select **13** (Finished Goods).
 
-5. Quantity: Enter **100**.
+5. For **Quantity**, enter **100**.
 
-6. Unit price: Enter **145.50**.
+6. For **Unit price**, enter **145.50**.
 
-7. Expiration date: Select the end of the next month.
+7. For **Expiration date**, select the end of the next month.
 
 8. Select **Save**.
+
+> **Note:**
+> If any required columns are not displayed, select the **Grid options (...)** button on the right side of the grid, select **Insert columns...**, and then add the missing columns.
 
 ### Confirm the purchase agreement
 
 1. Select **Purchase Agreement** at the top, and then select **Confirmation**
     under the **Generate** section.
 
-2. Select **Yes** in the **Print report** field.
+2. For **Print report**, select **Yes**.
 
 3. Select **OK**.
 
