@@ -40,20 +40,19 @@ She is not sure on the steps enter and confirm the sales order.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. In the **Customer account** field, select the drop-down button to open the
-    lookup.
+3. In the **Customer account** field, select the drop-down button to open the lookup.
 
 4. In the list, find and select the customer **US-004**.
 
 5. Select **OK**.
 
-6. Select the **Sales order line** fast tab then select the chevron icon next to the **Sales order line**.
+6. In the **Sales order lineS** FastTab, select the chevron icon next to the **Sales order line**.
 
 7. Select **Dimensions**.
 
-8. For this example, on the **Dimensions Display** pane, select the **Color** from the **PRODUCT DIMENSIONS**, **Site** and **Warehouse** from the **STORAGE DIMENSIONS**. The dimensions you select here will appear in the sales order grid. If you want your selections to persist, set the **Save setup** option to **Yes**.
+8. For this example, on the **Dimensions Display** pane, select the **Color** from the **PRODUCT DIMENSIONS**. Select **Site** and **Warehouse** from the **STORAGE DIMENSIONS**. The dimensions you select here will appear in the sales order grid. If you want your selections to persist, set the **Save setup** option to **Yes**.
 
 9. Select **OK**.
 
@@ -73,25 +72,23 @@ She is not sure on the steps enter and confirm the sales order.
 
 2. Select **View \> Totals**.
 
-    > **Note** The Totals page displays details about the entire order. This includes the subtotal amount, which is a sum of all line net amounts adjusted for
-    eventual line discounts, the total invoice amount, which is a subtotal
-    amount adjusted for eventual order-level discount, charges, and sales tax,
-    the customer credit limit situation, and more. The invoice amount is the
-    amount that will appear on the customer's invoice document.
+    > **Note:** The Totals page displays details about the entire order. This includes the subtotal amount, which is a sum of all line net amounts adjusted for eventual line discounts, the total invoice amount, which is a subtotal amount adjusted for eventual order-level discount, charges, and sales tax, the customer credit limit situation, and more. The invoice amount is the amount that will appear on the customer's invoice document.
 
 3. Select **OK**.
 
-### Confirm Sales order
+### Confirm and complete Sales order
+
+1. On the Action Pane, select **Complete**.
+
+2. On the **Sales order summary** page, select **Submit**.
 
 1. On the Action Pane, select **Sell**.
 
-2. Select **Generate\> Confirm sale order**.
+2. Select **Generate \> Confirm sale order**.
 
-3. On the Confirm sales order screen, access the **Posting** and **Print confirmation** fields by selecting All under the **Parameters** tab. Check that the **Posting** toggle is set to **Yes** and **Print confirmation** toggle is set to **Yes**.
+3. On the Confirm sales order screen, access the **Posting** and **Print confirmation** fields. If necessary, select **All** under the **Parameter** tab. Check that the **Posting** toggle is set to **Yes** and **Print confirmation** toggle is set to **Yes**.
 
-4. Select **OK**.
-
-5. Select **Yes** to post and print the sale order confirmation on the screen.
+4. Select **OK** to post and print the sale order confirmation on the screen.
 
 Exercise \#2 Create and review a sales order for commission
 -----------------------------------------------------------
@@ -118,9 +115,9 @@ You will have to do the following:
 
 ### Setup customer groups for commission
 
-1. Go to **Sales and marketing** > **Commissions** > **Customer groups for commission**.
+1. Go to **Sales and marketing \> Commissions \> Customer groups for commission**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Group** field, enter **01**.
 
@@ -132,9 +129,9 @@ You will have to do the following:
 
 ### Setup commision item groups
 
-1. Go to **Sales and marketing** > **Commissions** > **Item groups**.
+1. Go to **Sales and marketing \> Commissions \> Item groups**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Group** field, enter **01**.
 
@@ -146,14 +143,14 @@ You will have to do the following:
 
 ### Setup commision sales groups
 
-1. Go to **Sales and marketing** > **Commissions** > **Sales groups**.
+1. Go to **Sales and marketing \> Commissions \> Sales groups**.
 
     > [!NOTE]
     > A Commission sales group specifies the employees in sales representative roles who are eligible to receive a commission when a customer associated with the relevant sales group buys certain items. In the USMF demo data company, the ales group is called "Sales reps US.
 
 2. On the Action Pane, select **General**.
 
-3. Select **Sales rep..**
+3. Select **Sales rep.**
 
     > [!NOTE]  
     > The Sales rep. page displays a list of the company's sales people who are associated with a specific commission group. You can assign multiple sales representatives to the same group and define their respective share of the total commission fee as a percentage value. The total commission share across all employees must not exceed 100.
@@ -162,25 +159,26 @@ You will have to do the following:
 
 5. Select **Edit**.
 
-6. Set **Commission share** to `50`.
+6. Set **Commission share** to **50**.
 
-7. Select **New**.
+7. Select **+ New**.
 
 8. In the **Name** field, select the drop-down button to open the lookup. Use the Quick Filter to find records. For example, filter on the Name field with a value of 'Susan Burk'.
 
 9. Select **Select**.
 
-10. Set **Commission share** to `50`.
+10. Set **Commission share** to **50**.
 
 11. Select **Save**.
 
 ### Setup commision calculation
 
-1. Go to **Sales and marketing** > **Commissions** > **Commission calculation**.
-    > [!NOTE]
-    > In the Commission calculation page, you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product. As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.
+1. Go to **Sales and marketing \> Commissions \> Commission calculation**.
+    
+   > [!NOTE]
+   > In the Commission calculation page, you define the commission rate that the employee is to receive for a sales transaction when it contains the pre-set combination of customer and product. As part of the commission rate setup, you must specify the commission calculation basis and whether it should include or exclude discounts. You can also enter a validity period for when the commission rate is active.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Item code** field, select **Group**.
 
@@ -198,20 +196,21 @@ You will have to do the following:
 
 10. In the list, find and select the desired record.
 
-    - Keep the **Before line discount** option.
-    - Keep the **Revenue** option as the basis for commission value calculation.
+11. For **Discount**, keep the **Before line discount** option.
 
-11. In the **Commission percentage** field, enter a number.
+12. For **Basic**, keep the **Revenue** option as the basis for commission value calculation.
 
-12. Select **Save**.
+13. In the **Commission percentage** field, enter a number.
+
+14. Select **Save**.
 
 ### Invoice a sales order that qualifies a salesperson for a commission
 
-1. Go to **Sales and marketing \> Commissions \> Commission calculation**
+1. Go to **Sales and marketing \> Commissions \> Commission calculation**.
 
 2. Select **Edit**.
 
-3. In the **To** field select **12/31/2024**
+3. In the **To** field, select a future date, such as **12/31/2027**.
 
 4. Select **Save.**
 
@@ -219,16 +218,15 @@ You will have to do the following:
 
 6. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 
-7. Select **New**.
+7. Select **+ New**.
 
-8. In the **Customer account** field, select the drop-down button to open the
-    lookup.
+8. In the **Customer account** field, select the drop-down button to open the lookup.
 
 9. In the list, find and select **US-013**.
 
 10. Select **OK**.
 
-11. Select **Header** tab.
+11. Select the **Header** tab.
 
 12. Expand the **Setup** section.
 
@@ -238,58 +236,57 @@ You will have to do the following:
     > [!NOTE]
     > The value in the **Commission group** field represents a group that you have     created for one or more customers with the purpose of tracking commissions. The value is copied from the Customer card, but you can change it if you wish.
 
-13. Select **Lines** tab.
+13. Select the **Lines** tab.
 
-14. In the **Item number** field, select the drop-down button to open the lookup.
+14. In the **Item number** field, select the drop-down button to open the lookup list.
 
-15. In the list, select **D0001/MidRangeSpeaker**.
+15. In the list, select **D0001**.
 
 16. In the **Quantity** field, enter **2**.
 
-    > **TIP**
+    > [!TIP]
     > Review the net amount. It represents the sales revenue, which in this example is the basis for commission.
 
 17. Select **Save**.
 
-18. On the Action Pane, select **Sell**.
+18. On the Action Pane, select **Complete**.
 
-19. Select **Generate\> Confirm Sale Order**.
+19. On the **Sales order summary** pane, select **Submit**.
 
-20. This will prompt you with a screen where you will check the **Posting** field
-    is set to **Yes** and **Print confirmation** is set to **Yes**.
+20. On the Action Pane, select the **Sell** tab.
 
-21. Select **OK**.
+21. Select **Generate \> Confirm Sale Order**.
 
-22. Select **Yes** to post and print the Sale order confirmation on the screen.
+22. This will prompt you with a screen where you will check the **Posting** field is set to **Yes** and **Print confirmation** is set to **Yes**.
 
-23. On the Action Pane, select **Pick and Pack**.
+23. Select **OK**.
 
-24. Select **Generate\> Post packing Slip**.
+24. On the Action Pane, select **Pick and Pack**.
 
-25. This will prompt you with a screen where you will check that the Parameter
-    **Quantity** Field is set to **ALL** and the **Posting** flag is set to
-    **Yes**.
+25. Select **Generate \> Post packing Slip**.
 
-26. Select **OK** twice.
+26. This will prompt you with a screen where you will check that the Parameter **Quantity** field is set to **All** and the **Posting** flag is set to **Yes**.
 
 27. Select **OK**.
 
-28. On the Action Pane, select **Invoice**.
+28. Select **OK** again.
 
-29. Under **Generate** field group, select **Invoice**.
+29. On the Action Pane, select **Invoice**.
 
-30. Expand the **Parameters** section.
+30. Under **Generate** field group, select **Invoice**.
 
-31. In the **Quantity** field, select **All**.
+31. Expand the **Parameters** section.
 
-32. Select **Yes** in the **Posting** field.
+32. In the **Quantity** field, select **All**.
 
-33. Select **OK**.
+33. Select **Yes** in the **Posting** field.
 
 34. Select **OK**.
 
-    > **Note** It may take a minute or so to post the transaction. Allow the
-    processing to complete.
+35. Select **OK** again.
+
+    > [!NOTE]
+    > It may take a minute or so to post the transaction. Allow the processing to complete.
 
 ### Assign a commission group to a customer and a product
 
@@ -297,7 +294,7 @@ You will have to do the following:
 
 2. In the list, find and select the desired record.
 
-3. Click **Edit**.
+3. Select **Edit**.
 
 4. Expand the **Sales order defaults** section.
 
@@ -309,46 +306,55 @@ You will have to do the following:
 
 8. In the list, find and select the desired record.
 
-9. Click **Save**.
+9. Expand the **Invoice and delivery** section.
 
-10. Go to **Product information management > Products > Released products**.
+10. In the **Sales tax group** field, click the drop-down button to open the lookup.
 
-11. Use the Filter to find records. For example, filter on the Item number field with a value of **D0001**.
+11. Select the desired sales tax group from the list.
 
-12. In the list, click the link in the selected row.
+12. Select **Save**.
 
-13. Click **Edit**.
+13. Go to **Product information management \>  Products \>  Released products**.
 
-14. Expand the **Sell** section.
+14. Use the Filter to find records. For example, filter on the Item number field with a value of **D0001**.
 
-15. In the **Commission group** field, click the drop-down button to open the lookup.
+15. In the list, click the link in the selected row.
 
-16. In the list, select the commission group that you created earlier.
+16. Select **Edit**.
 
-17. Select **Save**.
+17. Expand the **Sell** section.
+
+18. In the **Commission group** field, click the drop-down button to open the lookup.
+
+19. In the list, select the commission group that you created earlier.
+
+20. Select **Save**.
 
 ### Review the registered sales commissions
 
-1. On the Action Pane, select **Invoice**.
+1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 
-2. Under **Journals** field group, select **Invoice**.
+2. Locate and select the invoiced sales order created for customer **US-013** in the previous task.
 
-3. Select **Details \> Commission transactions**.
+2. On the Action Pane, select **Invoice**.
 
-4. Review the details in the **Overview** tab.
+3. Under **Journals** field group, select **Invoice**.
+
+4. Under **Invoice**, select **Details \> Commission transactions**.
+
+5. Review the details in the **Overview** tab.
 
     > [!NOTE]
-    > The **Overview** tab displays lines representing the commission amounts payable to sales representatives who are associated with the invoiced sales order.
+    > The **Overview** tab displays lines representing the commission amounts payable to sales representatives who are associated with the invoiced sales order. If the tab is empty, review the commission calculation period and confirm that the customer, item, and sales groups were correctly configured before invoicing the sales order.
 
-5. Close the page.
+6. Close the page.
 
-6. Select **Voucher**.
+7. Select **Voucher**.
 
-    > **Note** You can review the voucher transactions for the
-    commission amounts that have been posted to the predefined commission
-    expense and commission payable accounts.
+    > [!NOTE]
+    > You can review the voucher transactions for the commission amounts that have been posted to the predefined commission expense and commission payable accounts.
 
-7. Close all pages.
+8. Close all pages.
 
 Exercise \#3 Create a customer trade agreement
 ----------------------------------------------
@@ -372,42 +378,43 @@ the customer is from the retail accounts group, the price will default to \$20.
 
 ### Create a trade agreement named “Sales price adjustment
 
-1. Go to **Sales and marketing**, then to **Prices and discounts**, and then to
-    **Trade agreement journals**.
+1. Go to **Sales and marketing** \> **Prices and discounts** \> **Trade agreement journals**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Name: Select **S_Price**, **Sales price adjustment**.
 
 4. Select the **Lines** button to open the journal.
 
-5. Relation: Select **Price (sales)**.
+5. For **Relation** select **Price (sales)**.
 
-6. Account code or Party code type: Select **Group**.
+6. For **Account code** or **Party code type** select **Group**.
 
-7. Account selection: Select **03**, **Retail accounts**.
+7. For **Account selection** select **03**, **Retail accounts**.
 
-8. Item code or Product code type: Select **Table**.
+8. For **Item code or Product code type** select **Table**.
 
-9. Item Relation: Select **A0001, HDMI 6' Cables**.
+9. For **Item Relation** select **A0001, HDMI 6' Cables**.
 
-10. From: Enter **1**.
+10. For **From** enter **1**.
 
-11. Amount in currency: Enter **20.00**.
+11. For **Amount in currency** enter **20.00**.
 
-12. Change to the **Details** tab.
+12. Change to the **Details** FastTab.
 
-13. From date: Select **February 15, 2017**.  
+13. For **From date** select the **current date**.
 
-14. Lead time: Enter **2**.
+14. For **Lead time** enter **2**.
 
-15. Select **Validate** \> **Validate all lines**.
+15. For validation select **Validate** \> **Validate all lines**.
 
 16. Select **OK**.
 
-17. After successful validation, **post** the journal
+17. After successful validation select **Post**.
 
-18. Close all pages.
+18. Select **OK**
+
+19. Close all pages.
 
 
 Exercise \#4 Generate and process customer rebate claimes for payment
@@ -433,16 +440,14 @@ You will have to do the following:
 
 ### Generate and process customer rebates
 
-1. In **USMF** navigate to the **Accounts Receivable** \> **Setup** \> **Accounts
-    receivable parameters** page, select the **Prices** tab and expand the
-    **Price details** tab, and check that the **Enable price** details option is
-    set to **Yes**.
+1. In **USMF | Contoso USMF** navigate to the **Accounts Receivable \> Setup \> Accounts receivable parameters** page, select the **Prices** tab, expand the **Price details** tab, and check that the **Enable price details** option is set to **Yes**.
 
-2. Navigate to the **Sales and marketing** \> **Customer rebates** \> **Rebate agreements**
-    page and select the **customer rebate agreement**: **USMF-000001**.
+2. Navigate to the **Sales and marketing \> Customer rebates \> Rebate agreements** page and select the **customer rebate agreement**: **USMF-000001**.
 
-3. If the Workflow approval status field is not set to **Approved**, you need
-    to select **Validation** on the Action pane to approve it.
+3. Verify that the **Workflow approval status** for rebate agreement **USMF-000001** is set to **Approved**.
+
+  > [!NOTE]
+  > If the status is not **Approved**, select **Validation** on the Action Pane to approve the rebate agreement.
 
 4. Review a customer rebate agreement
 
@@ -468,52 +473,50 @@ You will have to do the following:
         for a rebate of 20 USD per unit sold, if their weekly purchases of the
         product fall within 1 to 50 units; and a rebate of 40 USD per unit sold,
         if they purchase above 50 units.
-5. Select **Validation** from the Action pane and select **OK**.
 
 ### Generate rebate claims
 
 1. Navigate to **Sales and marketing \> Sales orders \> All sales orders**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Customer account** field, enter or select **US-009**.
 
 4. Select **OK**.
 
-5. In the **Item number** field, enter or select **T0020**.
+5. Select **+ Add line**.
 
-6. Set **Quantity** to **40**.
+6. In the **Item number** field, enter or select **T0020**.
 
-7. Select **Sales order line**.
+7. Set **Quantity** to **40**.
 
-8. Select **Price details**.
+8. Select **Sales order line**.
 
-9. Expand the **Rebates** section. The Rebates tab lists all the rebate
-    agreements that are applicable to the current order line and shows the
-    estimated rebate amount. Note that the displayed amounts are only
-    indications of what future rebate claims may be. The actual rebate amounts
-    may be different depending on: the total sales volume achieved by the
-    customer under a periodic rebate agreement; whether the customer had
-    returned all or partial quantities; and whether the applicable sales order
-    was invoiced.  
+9. Select **Price details**.
 
-10. Close the page.
+10. Review the information in the **Price details** pane, and then select OK to close it. 
 
-11. Select **Save**.
+11. Close the page.
 
-12. On the Action Pane, select **Invoice**.
+12. Select **Save**.
 
-13. Select **Invoice \> Generate \> Invoice**.
+13. Select **Complete**.
 
-14. Expand the **Parameters** section.
+14. Select **Submit**.
 
-15. In the **Quantity** field, select **All**.
+13. On the Action Pane, select **Invoice**.
 
-16. Select **OK**.
+14. Select **Invoice \> Generate \> Invoice**.
+
+15. Expand the **Parameters** section.
+
+16. In the **Quantity** field, select **All**.
 
 17. Select **OK**.
 
-18. Close all pages.
+18. Select **OK**.
+
+19. Close all pages.
 
 ### Process rebate claims
 
@@ -529,7 +532,7 @@ respective period.  
 
 2. Select **Cumulate**.
 
-3. In the **Customer** field, enter or select **US**-**009**.
+3. In the **Customer** field, enter or select **US-009**.
 
 4. In the **Start date** field, select today's date.
 
@@ -543,11 +546,12 @@ respective period.  
 
 9. Select **OK**.
 
-If you get a message that it cannot create a record in Ledger journal table, it is because the demo data is out of sync; perform these steps:
+  > [!NOTE]
+  > If you get a message that it cannot create a record in Ledger journal table, it is because the demo data is out of sync; perform these steps:
 
-1. Select **Close**.
+10. Select **Close**.
 
-2. Reset the number sequence:
+11. Reset the number sequence:
 
     1. Navigate to **General Ledger** \> **Ledger setup** \> **General ledger parameters**.
 
@@ -555,15 +559,15 @@ If you get a message that it cannot create a record in Ledger journal table, it 
 
     3. Select the hyperlink for **Number sequence code** field for Journal batch number.
 
-    4. In the **General** FastTab, change the Next number higher.
+    4. In the **General** FastTab, change the **Next** field to a higher number.
 
     5. Set **Continuous** to **No**.
 
     6. Select **Yes**.
 
-3. Navigate to **Sales and marketing \> Customer rebates \> Rebates**.
+12. Navigate to **Sales and marketing \> Customer rebates \> Rebates**.
 
-4. Resume with step 7 of Process rebate claims.
+13. Resume with step 7 of Process rebate claims.
 
 A message shows that the rebate was processed successfully, and the status of
 the claims has been changed to Mark. This means that as a result of a Rebate
@@ -587,9 +591,12 @@ a message appears to inform you that a journal has been posted.
 This is the Accounts receivable consumption journal, as specified in the
 Accounts receivable parameters page. This causes the real liability (credit)
 amount to be moved to the customer balance. This means that the customer’s
-account has been credited, and the Rebate accrual account has been debited.  
+account has been credited, and the Rebate accrual account has been debited.
 
-1. Navigate to **Accounts receivable\>Customers\>All customers**.
+> [!NOTE]
+> If no rebate claims are available, continue to the next lab and review the remaining steps without creating the credit note.
+
+1. Navigate to **Accounts receivable \> Customers \> All customers**.
 
 2. In the list, find and select **US-009**.
 
@@ -614,9 +621,7 @@ account has been credited, and the Rebate accrual account has been debited.  
 
 12. On the Action Pane, select **Collect**.
 
-13. Select **Settle transactions**. Note that a transaction for negative amount,
-    representing the total rebate amount, without invoice reference has been
-    added to the customer balance.  
+13. Select **Settle transactions**. Note that a transaction for negative amount, representing the total rebate amount, without invoice reference has been added to the customer balance.  
 
 14. Select **Cancel**.
 

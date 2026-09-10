@@ -125,7 +125,8 @@ help her to use?**
 
 12. Close the **Workflow history** page.
 
-> **Note:** After you submit the purchase requisition, its status might change to **In review** without a workflow work item being generated. If the **Work items** section on the **Workflow history** page is empty, the **Reassign** and **Approve** actions aren't available. In this case, continue to the next exercise.
+    > [!NOTE] 
+    > After you submit the purchase requisition, its status might change to **In review** without a workflow work item being generated. If the **Work items** section on the **Workflow history** page is empty, the **Reassign** and **Approve** actions aren't available. In this case, continue to the next exercise.
 
 ### Approve the purchase requisition
 
@@ -750,8 +751,8 @@ What would you do?**
 
 8. Select **Save**.
 
-> **Note:**
-> If any required columns are not displayed, select the **Grid options (...)** button on the right side of the grid, select **Insert columns...**, and then add the missing columns.
+   > [!NOTE] 
+   > If any required columns are not displayed, select the **Grid options (...)** button on the right side of the grid, select **Insert columns...**, and then add the missing columns.
 
 ### Confirm the purchase agreement
 

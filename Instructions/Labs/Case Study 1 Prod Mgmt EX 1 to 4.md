@@ -126,8 +126,9 @@ to help them creating the new warehouse.
 11. On the **Create picking locations** screen, select **Next**.
 
 12. Review the physical dimensions shown on the the **Specify additional information for all your picking locations** screen and select **Next**.
-    > **Note:** The physical dimensions shown on this page are the ones
-    that you set at the start of this procedure.
+    
+    > [!NOTE] 
+    > The physical dimensions shown on this page are the ones that you set at the start of this procedure.
 
 13. On the **Edit and delete picking locations** screen, select **Next**.
 
@@ -288,7 +289,8 @@ As supply chain manager, you will have to create 2 new products:
 
 5. In the **Product number** field, enter **GTLS001**.
 
-   > **Note:** If you receive a warning message that the product number already exists, choose a different product number.
+   > [!NOTE] 
+   > If you receive a warning message that the product number already exists, choose a different product number.
 
 6. In the **Product name** field, enter **V Neck T-Shirt**.
 

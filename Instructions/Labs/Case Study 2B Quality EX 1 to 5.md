@@ -138,12 +138,16 @@ process the quality order.
 5. In the **Quantity specification** field select **Fixed quantity**.
 
 6. In the **Value** field, enter **1**.
-     >**Note:** This value relates to the Quantity specification that’s selected in the adjacent field.
+     
+    > [!NOTE]  
+    > This value relates to the Quantity specification that’s selected in the adjacent field.
 
 7. Expand or collapse the **Process** section.
 
 8. Select or clear the **Full blocking** option.
-     >**Note:** If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.
+     
+    > [!NOTE] 
+    >If you select this option, the whole lot or order line quantity is blocked if a test is failed. If you don't select it, only the items in the quality order are blocked.
 
 9. Select **Save**.
 
@@ -237,7 +241,8 @@ process the quality order.
 
 Before you begin this exercise, blocking rules would need to be enabled for processing quality orders.
 
-> **Note:** There's an exclusion on sales orders lesser than $10,000 for all customers. The sales order may provide an informational message that the order amount may be less than or equal to the sales order exclusion amount in the sales order rule and will not be sent to credit management. Before the execution of this task, view blocking rules and exclusion rules on the **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules page**.
+> [!NOTE]
+>There's an exclusion on sales orders lesser than $10,000 for all customers. The sales order may provide an informational message that the order amount may be less than or equal to the sales order exclusion amount in the sales order rule and will not be sent to credit management. Before the execution of this task, view blocking rules and exclusion rules on the **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules page**.
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 
@@ -249,13 +254,15 @@ Before you begin this exercise, blocking rules would need to be enabled for proc
 
 5. In the **Item number** field, enter or select **T0002**.
 
-   > **Note:** If you receive the error **"Cannot find enabled pricing tree. Correct pricing tree setup."**, create and enable a price tree in **Pricing management** > **Setup** > **Price setup** > **Price trees**, and then retry the sales order.
+   > [!NOTE]
+   > If you receive the error **"Cannot find enabled pricing tree. Correct pricing tree setup."**, create and enable a price tree in **Pricing management** > **Setup** > **Price setup** > **Price trees**, and then retry the sales order.
 
 6. On the Action Pane, select **Pick and pack**.
 
 7. Select **Quality orders**.
 
-   > **Note:** There are no quality order for this customer.
+   > [!NOTE] 
+   > There are no quality order for this customer.
 
 8. Close the page.
 
@@ -269,11 +276,13 @@ Before you begin this exercise, blocking rules would need to be enabled for proc
 
 13. Select **OK**.
 
-    > **Note:** A message may appear stating "You are about to post the document without printing it. Select OK to continue." Read the error message details generated preventing you from continuing the process of picking and packing because you now have a quality order.
+    > [!NOTE]  
+    > A message may appear stating "You are about to post the document without printing it. Select OK to continue." Read the error message details generated preventing you from continuing the process of picking and packing because you now have a quality order.
 
 14. Select **Quality orders**.
 
-    > **Note:** A quality order should be generated automatically. If no quality order is generated, create one manually:
+    > [!NOTE] 
+    > A quality order should be generated automatically. If no quality order is generated, create one manually:
     >
     > 1. Select **+ New**.
     > 2. In the **Test group** field, select **eBookTG**.
@@ -297,7 +306,8 @@ Before you begin this exercise, blocking rules would need to be enabled for proc
 
 21. Select **Validate** to validate the quality order.
 
-    >**Note:** The process operation has removed the error as the the test results of the quality order test passed.
+    > [!NOTE]  
+    > The process operation has removed the error as the the test results of the quality order test passed.
 
 22. Select **OK**.
 
