@@ -431,8 +431,7 @@ product that uses the new hierarchy.
 
 ### Create a reservation hierarchy
 
-1. In **USP2**, go to **Warehouse management** \> **Setup** \> **Inventory** \>
-    **Reservation hierarchy**.
+1. In **USP2**, go to **Warehouse management \> Setup \> Inventory \> Reservation hierarchy**.
 
 2. Select **+ New** to create a new reservation hierarchy.
 
@@ -444,14 +443,15 @@ product that uses the new hierarchy.
 
 1. In the **Selected** pane, select the **Serial number** check box.
 
-2. Select the left directional button to move the dimensions to the Available
-    pane.
+2. Select the left directional button to move the dimensions to the **Available** pane.
 
 3. Repeat steps 1-2 for **Owner.**
 
 4. Select **OK**.
 
-5. Close the forms.
+5. Select **Save**.
+
+6. Close the forms.
 
 ### Create a new product and link it to the new reservation hierarchy
 
@@ -464,8 +464,7 @@ postings. Use the information provided to create a new item.
 
 ### Create a product
 
-1. In **USP2**, Open **Product information management \> Products \> Released
-    products.**
+1. In **USP2**, Open **Product information management \> Products \> Released products.**
 
 2. Select **+ New** to create a new product.
 
@@ -489,7 +488,7 @@ postings. Use the information provided to create a new item.
 
 ### Configure advanced warehousing settings
 
-1. Expand the **Warehouse** FastTab on the Released product details form.
+1. Expand the **Warehouse** FastTab on the **Released product details** form.
 
 2. Select **GAL** in the **Unit sequence group ID** field.
 
@@ -502,7 +501,7 @@ Exercise \#3 Create disposition codes and inbound location directives
 
 *Objective: Create and use disposition codes and inbound location directives.*
 
-You have been assigned to assist one of the sister company’s USP2 teams in the
+You have been assigned to assist one of the sister company's USP2 teams in the
 setup and implementation of a warehouse management system.
 
 You must set up two new **disposition codes**. The first will be called “Ready,”
@@ -534,14 +533,12 @@ You will need to do the following:
 
 7. In the **Inventory status** field, select **Blocked**.
 
-8. Close the forms.
+8. Select **Save**.
 
-    > **Note** In the Work template code field, you can select a work template code that is
-    associated with a work order type, return order, or purchase order. You
-    assign a work template to a disposition code only when you want to override
-    the work template. In the Return disposition code field, you can select a return disposition
-    code for a sales return order. After you select a return disposition code,
-    the disposition code is only applicable for the sales order return process.
+9. Close the forms.
+
+   > [!NOTE]
+   > In the Work template code field, you can select a work template code that is associated with a work order type, return order, or purchase order. You assign a work template to a disposition code only when you want to override the work template. In the Return disposition code field, you can select a return disposition code for a sales return order. After you select a return disposition code, the disposition code is only applicable for the sales order return process.
 
 ### Create an inbound location directive
 
@@ -555,12 +552,11 @@ You will need to do the following:
 
 4. Type **MAIN DC** in the **Name** field.
 
-5. Select **Put** in the **Work type** field. This is because we want to put the
-    received items on purchase orders away.
+5. Select **Put** in the **Work type** field. This is selected because we want to put the received items on purchase orders away.
 
-6. Select **3** in the **Site** field.
+6. Select **30** in the **Warehouse** field.
 
-7. Select **30** in the **Warehouse** field.
+7. Select **3** in the **Site** field.
 
 8. Select **Stage** in the **Directive code** field.
 
@@ -574,7 +570,7 @@ You will need to do the following:
 
 3. Type **200** in the **To quantity** field.
 
-4. Type **ea** in the **Unit** field.
+4. Type or select **ea** in the **Unit** field.
 
 5. Select **None** in the **Locate quantity** field.
 
@@ -590,7 +586,7 @@ You will need to do the following:
 
 1. Select **Edit query** in the action pane.
 
-2. Select **Add** on the Query form.
+2. Select **+ Add** on the Query form.
 
 3. Select **Purchase Orders** in the **Table** column.
 
@@ -629,8 +625,7 @@ have the put location types of Bay-door, Bulk, and Pick.
 
 ### Add a work class
 
-1. In company **USMF**, open **Warehouse management \> Setup \> Work \> Work
-    classes**.
+1. In company **USMF**, open **Warehouse management \> Setup \> Work \> Work classes**.
 
 2. Select **+ New** to create a work class.
 
@@ -640,17 +635,19 @@ have the put location types of Bay-door, Bulk, and Pick.
 
 5. For **Work order type**, select **Purchase orders.**
 
-6. On the **Valid put location types** FastTab, select **New.**
+6. On the **Valid put location types** FastTab, select **+ New**
 
-7. Enter **Baydoor.**
+7. Enter or select **Baydoor**.
 
 8. Select **+ New** again.
 
-9. Enter **Bulk**.
+9. Enter or select **Bulk**.
 
 10. Select **+ New** again.
 
-11. Enter **Pack**.
+11. Enter or select **Pack**.
+
+12. Select **Save**.
 
 ### Create a mobile device menu item and menu
 
@@ -659,10 +656,9 @@ put away. You will then add them to your mobile device menu.
 
 ### Set up mobile device menu items
 
-1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu
-    items**.
+1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 
-2. Select on **New.**
+2. Select **+ New**
 
 3. For **Menu item name**, enter **PO Receive.**
 
@@ -678,31 +674,31 @@ put away. You will then add them to your mobile device menu.
 8. Set the **License plate grouping policy option** to **License plate
     grouping**.
 
-9. Set the **Generate license plate** slider to **Yes.**
+9. Set the **Generate license plate** slider to **Yes**.
 
-10. Set all other sliders to No.
+10. Set all other sliders to **No**.
 
 11. Select **Save** in the action pane.
 
 12. Select **+ New** in the action pane.
 
-13. For **Menu item name**, enter **PO Putaway.**
+13. For **Menu item name**, enter **PO Putaway**.
 
-14. For **Title**, enter **PO Putaway.**
+14. For **Title**, enter **PO Putaway**.
 
-15. For **Mode**, select **Work.**
+15. For **Mode**, select **Work.*
 
 16. Set the **Use existing work** slider to **Yes**.
 
-17. On the **General** FastTab, for Directed by, select User grouping.
+17. On the **General** FastTab, for **Directed by**, select **User grouping**.
 
 18. Set the **Group put away** slider to Yes.
 
 19. Set all remaining sliders to **No**.
 
-20. On **Work classes** FastTab, select **New.**
+20. On **Work classes** FastTab, select **+ New**
 
-21. For **Work class ID**, select **P-Orders.**
+21. For **Work class ID**, select **P-Orders**.
 
 22. Select **Save** in the action pane.
 
@@ -716,11 +712,9 @@ put away. You will then add them to your mobile device menu.
 2. Select **Inbound** in the left menu bar and select **Edit** in the action
     pane.
 
-3. In the **AVAILABLE MENU AND MENU ITEMS** pane, select **PO Receive** and
-    select the right directional arrow.
+3. In the **AVAILABLE MENUS AND MENU ITEMS** pane, select **PO Receive** and select the right directional arrow.
 
-4. In the **AVAILABLE MENU AND MENU ITEMS**, select **PO Putaway** and select
-    the right directional arrow.
+4. In the **AVAILABLE MENUS AND MENU ITEMS**, select **PO Putaway** and select the right directional arrow.
 
 5. Select **Save** in the action pane.
 
@@ -752,7 +746,9 @@ put away. You will then add them to your mobile device menu.
 
 12. Select **Set password**.
 
-13. Close the form.
+13. Select **Save**.
+
+14. Close the form.
 
 ### Set up a mobile device menu item for completing work of type Purchase order
 
@@ -761,73 +757,49 @@ work class that is associated with the menu item determines which work is valid.
 
 ### Create a mobile device menu item
 
-1. **Go** to **Warehouse management \> Setup \> Mobile device \> Mobile device
-    menu items.**
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**
 
 2. Select **+ New**.
 
-3. In the **Menu item name** field, enter a unique value. For example, you
-    could enter POMove. Remember the value; you'll need it later.
+3. In the **Menu item name** field, enter a unique value. For example, you could enter POMove. Remember the value; you'll need it later.
 
-4. In the **Title** field, enter **PO Move**. This is the title which will be
-    displayed on the mobile device.
+4. In the **Title** field, enter **PO Move**. This is the title which will be displayed on the mobile device.
 
-5. In the **Mode** field, select 'Work'.
+5. In the **Mode** field, select **Work**.
 
 6. Select **Yes** in the **Use existing work** field.
 
-7. The **Display inventory status** field determines whether the inventory
-    status of the on-hand inventory will be displayed to the warehouse worker on
-    the mobile device. Select **Yes**.
+7. The **Display inventory status** field determines whether the inventory status of the on-hand inventory will be displayed to the warehouse worker on the mobile device. Select **Yes** for this field.
 
-8. In the **Directed by** field, select **System grouping**. When you select
-    something in the **Directed by** field, additional fields appear in the
-    **General** section on this page. The fields that appear depend on what you
-    selected. When you select **System grouping**, two new fields are added.
+8. In the **Directed by** field, select **System grouping**. When you select something in the **Directed by** field, additional fields appear in the **General** section on this page. The fields that appear depend on what you selected. When you select **System grouping**, two new fields are added.
 
-9. In the **System grouping** field, select **WorkPoolId**. When warehouse
-    workers open this menu item, they’ll be asked to scan a work pool ID. All
-    work orders with this work pool ID and open work order lines with one of the
-    work classes added to this menu item will be pushed to the user.
+9. In the **System grouping field**, select **WorkPoolId**. When warehouse workers open this menu item, they'll be asked to scan a work pool ID. All work orders with this work pool ID and open work order lines with one of the work classes added to this menu item will be pushed to the user.
 
-10. In the **System grouping label** field, enter **Work pool**. This is the text
-    displayed to the user on the mobile device.
+10. In the **System grouping label** field, enter **Work pool**. This is the text displayed to the user on the mobile device.
 
-11. Select **Yes** in the **Override license plate during put** field. This
-    option allows warehouse workers to override the target license plate when
-    items are put down on a license plate-controlled location.
+11. Select **Yes** in the **Override license plate during put** field. This option allows warehouse workers to override the target license plate when items are put down on a license plate-controlled location.
 
-12. Select **Yes** in the **Group put away** field. If all the Put lines on the
-    work order share the same location, the user will receive one combined Put
-    instruction for all lines.
+12. Select **Yes** in the **Group put away** field. If all the Put lines on the work order share the same location, the user will receive one combined Put instruction for all lines.
 
-13. Expand the **Work classes** section.
+13. In the **Work classes** section, select **+ New**.
 
-14. Select **+ New**.
+14. In the **Work class ID** field, enter **Purchase**. The work pool restricts the work that the menu item can be used for. In this case it will be used for open work order lines that have the Purchase work class ID.
 
-15. In the **Work class ID** field, enter **Purchase** and tab off. The work pool
-    restricts the work that the menu item can be used for. In this case it will
-    be used for open work order lines that have the Purchase work class ID.
-
-16. Select **Save**.
+15. Select **Save**.
 
 ### Set up work confirmation
 
 1. Select **Work confirmation setup** in the action pane.
 
-2. In the **Work type** field, select 'Pick'.
+2. In the **Work type** field, select **Pick**.
 
-3. Select the **Auto confirm** check box. The work instruction with work type
-    Pick will be auto-confirmed. This instruction will not be presented to the
-    user.
+3. Select the **Auto confirm** check box. The work instruction with work type selected as **Pick** will be auto-confirmed. This instruction will not be presented to the user.
 
 4. Select **+ New**.
 
-5. In the **Work type** field, select 'Put'.
+5. In the **Work type** field, select **Put**.
 
-6. Select the **Location confirmation** check box. The warehouse worker will be
-    asked to perform a confirmation scan of the location when the item is put
-    down.
+6. Select the **Location confirmation** check box. The warehouse worker will be asked to perform a confirmation scan of the location when the item is put down.
 
 7. Select **Save**.
 
@@ -837,16 +809,13 @@ work class that is associated with the menu item determines which work is valid.
 
 ### Add the menu item to a mobile device menu
 
-1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device
-    menu**.
+1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 
 2. Select **Edit**.
 
-3. Use the Quick Filter to find records. For example, filter on the Name field
-    with a value of 'inbound'. You want to find the menu you use for inbound
-    menu items. In **USMF** this is called Inbound.
+3. Use the Quick Filter to find records. For example, filter on the Name field with a value of **inbound**. You want to find the menu you use for inbound menu items. In **USMF** this is called **Inbound**.
 
-4. In the tree, select 'a value' POMove.
+4. In the **AVAILABLE MENUS AND MENU ITEMS** section, select the value **POMove**.
 
 5. Select on the arrow that points to the right.
 
@@ -864,7 +833,7 @@ Exercise \#5 Configure purchase orders
 The warehouse manager for USMF wants to process a purchase order receipt using a
 mobile device.
 
-He ordered 10 Pcs of HDMI 6’ Cables.
+He ordered 10 Pcs of HDMI 6' Cables.
 
 These will be from Vendor US-111 and shipped to Warehouse 11.
 
@@ -880,21 +849,20 @@ You will need to do the following:
 
 Create a purchase order
 
-1. In **USP2,** go to **Accounts payable** \> **Purchase orders** \> **All purchase orders.**
+1. In **USP2,** go to **Accounts payable \> Purchase orders \> All purchase orders**
 
 2. Select **+ New** in the action pane.
 
-3. Select **Vendor US-112**.
+3. In the **Vender account** field, select **US-112**.
 
-4. On the **General** FastTab, enter storage dimensions of Site **3** and
-    Warehouse **30**.
+4. On the **General** FastTab, in the **Storage dimensions** section, enter **3** for **Site** and **30** for **Warehouse**.
 
 5. Select **OK**.
 
 6. On the **Purchase order lines** FastTab, select **Item number P9500**.
 
-    > **Note** You will get a message that the vendor is not authorized for this product. This
-is a warning only. You may continue after closing the message.
+   > [!NOTE]
+   > You will get a message that the vendor is not authorized for this product. This is a warning only. You may continue after closing the message.
 
 7. Enter a **Quantity** of **1**.
 
@@ -904,37 +872,36 @@ is a warning only. You may continue after closing the message.
 
 10. Select the **Financial dimensions** tab.
 
-11. In the **Financial dimensions**, the **Product Group** field, select **OJ
-    B2B**.
+11. In the **Financial dimensions**, the **ProductGroup** field, select **OJ B2B**.
 
-12. Under **Purchase Tab** in Action Pane. In the **Actions** group,
-    select **Confirm**.
+12. On the **Action Pane**, select the **Purchase** tab. In the **Actions** group, select **Confirm** to confirm the purchase order.
 
-    > **Note** Make a note of your purchase order number.
+    > [!NOTE] 
+    > Make a note of your purchase order number.
 
 13. Close the form.
 
-14. Navigate to **Warehourse Management \> Setup \> Worker.**
+14. Navigate to **Warehouse Management \> Setup \> Worker**.
 
-15. Select on **New.**
+15. Select **+ New**
 
-16. Select **Ted Howard** under **Worker**
+16. Select **Ted Howard** for **Worker**
 
-17. Select on **+ New** User ID under **Users** fast Tab.
+17. Select **+ New** under **Users** fast Tab.
 
 18. Enter **toward** under **User ID** and **User name.**
 
-19. Select **Default Warehouse – 30**
+19. For **Default Warehouse**, select **30**.
 
-20. Select **Menu name – Main**
+20. For **Menu name**, select **Main**
 
 21. Select **Save.**
 
-22. Set the **Password – 12345, Confirm Password – 12345.**
+22. For **Password**, enter **12345** and for **Confirm Password**, enter **12345**.
 
-23. Select on **Set Password.**
+23. Select **Set Password**.
 
-24. Close the Page.
+24. Close the page.
 
 Create a purchase order receipt using the mobile device
 
@@ -945,21 +912,19 @@ in the Virtual machine. You may need to expand the right bar in the lab
 environment to see all content in the instructions. Perform the following
 steps.*
 
-1. Right-select on the tab of your normal system default dashboard and
-    select **Duplicate tab**.
+1. Right-select on the tab of your normal system default dashboard and select **Duplicate tab**.
 
-2. The URL on your new tab will be:
-    <https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=USP2&mi=defaultdashboard>
+2. The URL on your new tab will be something like:
+    <https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=USP2&mi=defaultdashboard> or <https://labs.operations.dynamics.com/?cmp=USP2&mi=defaultdashboard>
 
 3. Delete all characters on the new tab after dynamics.com (i.e. delete
-    /?cmp=USP2&mi=defaultdashboard)
+/?cmp=USP2&mi=defaultdashboard)
 
 4. Replace those characters with **/?mi=action%3awhsWorkExecute&cmp=USP2**
 
 **Sign into the Mobile Emulator**
 
-1. The emulator will now launch, and you can sign in to the mobile device
-    emulator.
+1. The emulator will now launch, and you can sign in to the mobile device emulator.
 
 2. Log in to the mobile device with the user you have enabled.
 
@@ -967,27 +932,25 @@ steps.*
 
 4. Select **Purchase receive**.
 
-5. Enter the purchase order number in the **PONUM** field. Select on **OK**.
+5. Enter the purchase order number in the **PONum** field. Select **OK**.
 
-6. Enter Item number **P9500**. Select on **OK**.
+6. Enter Item number **P9500**. Select **OK**.
 
 7. Enter a quantity of **1** in the **Qty** field. Select **OK** Twice.
 
-8. Enter LP number **LP951**. Select **OK**
+8. Enter **LP951** in the **LP** field. Select **OK**
 
-9. Enter **today’s date** as the vendor batch date. Select **OK**.
+9. Enter **today's date** as the vendor batch date. Select **OK**.
 
-- Enter a date six months from the current date as the Expiry date. Select
-    **OK.**
+10. Enter a date six months from the current date as the **Vendor Expiry date**. Select **OK**
 
-- Select the **Use as expiration date** arrow. Select **No** and select
-    **OK**.
+11. Select the **Use as expiration date** arrow. Select **No** and select **OK**.
 
-- For **Country/Region of Origin 1**, enter **USA**. Select **OK.**
+12. For **Country/region of Origin 1**, enter **USA**. Select **OK**.
 
-1. Select the green check mark again to bypass the second Country/region entry.
+13. Select **OK** again to bypass the second Country/region entry.
 
-2. Note the work completed notification.
+14. Note that the work completed notification appears.
 
 Exercise \#6 Configure wave processing (Bonus)
 ----------------------------------------------
@@ -1020,8 +983,7 @@ Configure wave processing.
 
 ### Configure wave processing
 
-1. In **USMF**, go to **Warehouse management \> Setup \> Waves \> Wave
-    templates**.
+1. In **USMF**, go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 
 2. Select **+ New**.
 
@@ -1029,79 +991,49 @@ Configure wave processing.
 
 4. In the **Wave template description** field, enter **GTL Wave**.
 
-5. In the **Site** field, enter or select site **2**.
+5. In the **Warehouse selection** section, select **Warehouse**.
 
-6. In the **Warehouse** field, enter **24**.
+6. In the **Site** field, enter or select site **2**.
 
-7. Set the **Automate wave creation** field to **Yes**. Select this option to
-    automatically create a wave when a sales order, production order, or kanban
-    is released to the warehouse.
+7. In the **Warehouse** field, enter or select **24**.
 
-8. Set the **Process wave at release to warehouse** option to **Yes**. Select
-    this option to automatically process the wave and create work when a line is
-    released to the warehouse.
+8. Set the **Automate wave creation** field to **Yes**. Select this option to automatically create a wave when a sales order, production order, or kanban is released to the warehouse.
 
-9. Set the **Automate wave release** option to **Yes**. Select this option to
-    automatically release the wave. The picking work is created and made
-    available on mobile devices.
+9. Set the **Process wave at release to warehouse** option to **Yes**. Select this option to automatically process the wave and create work when a line is released to the warehouse.
 
-10. Set the **Assign to open waves** option to **Yes**. Lines are assigned to
-    waves based on the query filter for the wave template.
+10. Set the **Automate wave release** option to **Yes**. Select this option to automatically release the wave. The picking work is created and made available on mobile devices.
 
-11. Set the **Process wave automatically at threshold** option to **Yes**.
-    Select this option to automatically process the wave when its values reach
-    the thresholds for weight, shipment, and lines specified in the **Wave
-    thresholds** field group. This option is available only if **Shipping** is
-    selected in the **Wave template type** field.
+11. Set the **Assign to open waves** option to **Yes**. Lines are assigned to waves based on the query filter for the wave template.
 
-12. Set the **Automate replenishment work release** option to **Yes**. Select
-    this option to create demand-based replenishment work and release it
-    automatically. You must add the replenishment wave method to the wave
-    template and create a replenishment template of the type **Wave demand**.
+12. Set the **Process wave automatically at threshold** option to **Yes**. Select this option to automatically process the wave when its values reach the thresholds for weight, shipment, and lines specified in the **Wave thresholds** field group. This option is available only if **Shipping** is selected in the **Wave template type** field.
 
-13. Expand the **Methods** section. Wave template methods allow you to control
-    the sequence of activities that each wave is going through when it is
-    processed. For example, you might have a method for wave replenishment. When
-    you add a method, it is automatically listed in the appropriate location in
-    the sequence of steps. If you have set the **Automate replenishment work
-    release** option to **Yes**, you need to add the replenish method here. Wave
-    attributes act as filters, to restrict the kind of items that can use the
-    wave. For example, you could specify an item group.
+13. Set the **Automate replenishment work release** option to **Yes**. Select this option to create demand-based replenishment work and release it automatically. You must add the replenishment wave method to the wave template and create a replenishment template of the type **Wave demand**.
 
-14. Select **Save**.
+14. Expand the **Methods** section. Wave template methods allow you to control the sequence of activities that each wave is going through when it is processed. For example, you might have a method for wave replenishment. When you add a method, it is automatically listed in the appropriate location in the sequence of steps. If you have set the **Automate replenishment work release** option to **Yes**, you need to add the replenish method here. Wave attributes act as filters, to restrict the kind of items that can use the wave. For example, you could specify an item group.
 
-15. Close the wave templates page.
+15. Select **Save**.
 
-16. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
+16. Close the wave templates page.
 
-17. Expand the **Wave processing** section.
+17. Go to **Warehouse management \> Setup \> Warehouse management parameters**.
 
-18. In the **Wave processing batch group** field, enter or select a value.
+18. Expand the **Wave processing** section.
 
-19. Set the **Process waves in batch** option to Yes.
+19. In the **Wave processing batch group** field, enter or select a value.
 
-20. In the Wait for lock (ms) field, enter the time, in milliseconds, that an
-    allocation step will wait for a system resource that is locked by another
-    allocation step. When this time is exceeded, the wave is not processed and
-    an error message is displayed.
+20. Set the **Process waves in batch** option to Yes.
 
-21. Select **Save**.
+21. In the Wait for lock (ms) field, enter the time, in milliseconds, that an allocation step will wait for a system resource that is locked by another allocation step. When this time is exceeded, the wave is not processed and an error message is displayed.
 
-22. Close the parameters page.
+22. Select **Save**.
 
-23. Go to **Production control \> Setup \> Production control parameters**.
+23. Close the parameters page.
 
-24. In the **Release to warehouse** Production line release field, select an
-    option. For sales orders and kanban orders, inventory must be reserved
-    before the order is released to the warehouse. Otherwise, the items or
-    allocation lines cannot be processed in a wave. For production orders, you
-    also have the option of choosing Allow partial reservation. For example,
-    this is useful if you have the materials that you need to start production,
-    and can then wait until the additional materials become available to finish
-    the process. If you select this option, you must manually repeat the release
-    to warehouse process when the additional materials become available.
+24. Go to **Production control \> Setup \> Production control parameters**.
 
-25. Close the parameters page.
+25. In the **Release to warehouse** Production line release field, select an option. For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing Allow partial reservation. For example, this is useful if you have the materials that you need to start production, and can then wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.
+
+26. Close the parameters page.
 
 Exercise \#7 Configure cycle counting (Bonus)
 ---------------------------------------------
@@ -1135,6 +1067,8 @@ You will need to do the following:
 
 6. Select the **Remove reservations** check box.
 
+7. Select **Save**.
+
 ### Set up warehouse management parameters for cycle counting
 
 1. Open **Warehouse management \> Setup \> Warehouse management parameters**.
@@ -1148,10 +1082,11 @@ You will need to do the following:
 
 5. In the **Default cycle count work priority** field, enter **1**.
 
+6. Select **Save**.
+
 ### Set up a spot cycle counting menu item
 
-1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu
-    items**.
+1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 
 2. Select **+ New** in the action pane.
 
@@ -1169,20 +1104,17 @@ You will need to do the following:
 
 9. Select **System directed** in the **Directed by** field.
 
-10. Expand the **Work classes** FastTab.
+10. In the **Work classes** FastTab, select **+ New**.
 
-11. Select **+ New** in the FastTab.
+11. Make a selection in the **Work class ID** field.
 
-12. Make a selection in the **Work class ID** field.
+12. Select **Cycle Counting** in the action pane.
 
-13. Select **Cycle Counting** in the action pane.
+13. On the **Mobile device cycle counting** form, enter **2** in the **Number of attempts** field.
 
-14. On the **Mobile device cycle counting** form, enter **2** in the **Number of
-    attempts** field.
+14. Select **OK** to close the form.
 
-15. Select **OK** to close the form.
-
-16. Select **Save** in the action pane.
+15. Select **Save** in the action pane.
 
 ### Add the spot count menu item to the mobile device menu
 
@@ -1193,11 +1125,9 @@ You will need to do the following:
 
 3. Select **Edit** in the action pane.
 
-4. In the **Mobile device menus** section, select **Spot Cycle Count** from the
-    **Available menus and menu items** list.
+4. In the **Mobile device menus** section, select **Spot Cycle Count** from the **AVAILABLE MENUS AND MENU ITEMS** list.
 
-5. Select the right directional arrow to add the menu item to the **Menu
-    structure** list.
+5. Select the right directional arrow to add the menu item to the **MENU STRUCTURE** list.
 
 6. Select **Save** in the action pane.
 
@@ -1227,10 +1157,7 @@ You will need to do the following:
 
 2. Select the **Cycle counting** tab.
 
-3. In the **Default cycle count work priority** field, enter a number. This
-    step changes the priority of cycle counting work compared to other types of
-    work in the warehouse. By entering a number that is lower than the number
-    for other types of work, you raise the priority of the cycle counting work.
+3. In the **Default cycle count work priority** field, enter a number. This step changes the priority of cycle counting work compared to other types of work in the warehouse. By entering a number that is lower than the number for other types of work, you raise the priority of the cycle counting work.
 
 4. Select **Save**.
 
@@ -1238,8 +1165,7 @@ You will need to do the following:
 
 ### Enable the mobile device
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu
-    items**.
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 
 2. Select **+ New**.
 
@@ -1249,21 +1175,15 @@ You will need to do the following:
 
 5. In the **Mode** field, select **Work**.
 
-6. Set the **Use existing work** option to **Yes**. When you set this option to
-    Yes, the system will look for existing work when the mobile device menu item
-    is used.
+6. Set the **Use existing work** option to **Yes**. When you set this option to **Yes**, the system will look for existing work when the mobile device menu item is used.
 
-7. In the **Directed by** field, select 'System directed'. When "System
-    directed" is selected, the warehouse worker will be directed to open work
-    that is in defined work classes. (You will create these work classes next.)
-
-8. Expand or collapse the **Work classes** section.
+7. In the **Directed by** field, select **System directed**. When **System directed** is selected, the warehouse worker will be directed to open work that is in defined work classes. (You will create these work classes next.)
 
 Next, you will create two work classes that will be used with this mobile device
 menu item. When the menu item is used, these work classes will be queried, and
 the work that has the highest priority will be shown to the user.
 
-1. Select **+ New**.
+1. In **Work classes** FastTab, select **+ New**.
 
 2. In the **Work class ID** field, select a value.
 
@@ -1275,10 +1195,9 @@ the work that has the highest priority will be shown to the user.
 
 6. Close the page.
 
-7. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device
-    menu**.
+7. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 
-8. In the tree, select the menu item that you just created.
+8. In the **AVAILABLE MENUS AND MENU ITEMS** list, select the menu item that you just created.
 
 9. Select **Edit**.
 
@@ -1288,8 +1207,7 @@ the work that has the highest priority will be shown to the user.
 
 ### Create a counting threshold
 
-1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count
-    thresholds**.
+1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count thresholds**.
 
 2. Select **+ New**.
 
@@ -1311,8 +1229,7 @@ the work that has the highest priority will be shown to the user.
 
 ### Create a cycle count plan
 
-1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count
-    plans**.
+1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count plans**.
 
 2. Select **+ New**.
 
@@ -1330,15 +1247,11 @@ the work that has the highest priority will be shown to the user.
 
 9. Select **OK**.
 
-10. In the **Days between cycle counting** field, enter a number. For example,
-    if the Days between cycle counting field is set to 5, cycle counting work
-    will be created every five days. However, if cycle counting work is
-    processed on day three, the next cycle counting work will be created five
-    days after the last cycle counting was processed, on day 8.
+10. In the **Days between cycle counting** field, enter a number. For example, if the Days between cycle counting field is set to 5, cycle counting work will be created every five days. However, if cycle counting work is processed on day three, the next cycle counting work will be created five days after the last cycle counting was processed, on day 8.
 
 11. Select **Save**.
 
-12. In the Cycle count plan product selections area, select **+ New**.
+12. In the **Cycle count plan product selections** area, select **+ New**.
 
 13. In the **Sequence number** field, enter a number. The sort is from the
     smallest number to the largest number. The value must be more than 0 (zero).
@@ -1395,12 +1308,11 @@ You will need to do the following:
 
 1. In **USMF**, go to **Warehouse management \> Setup \> Work \> Work templates**.
 
-2. In the **Work order type** field, select 'Cycle counting'.
+2. In the **Work order type** field, select **Cycle counting**.
 
 3. Select **+ New**.
 
-4. In the **Sequence number** field, enter a number. The sort order is from the
-    smallest number to the largest number. The value must be more than 0 (zero).
+4. In the **Sequence number** field, enter a number. The sort order is from the smallest number to the largest number. The value must be more than 0 (zero).
 
 5. In the **Work template** field, enter a value.
 
@@ -1424,8 +1336,7 @@ You will need to do the following:
 
 15. Select **+ New**.
 
-16. In the **Sequence number** field, enter a number. The sort order is from the
-    smallest number to the largest number. The value must be more than 0 (zero).
+16. In the **Sequence number** field, enter a number. The sort order is from the smallest number to the largest number. The value must be more than 0 (zero).
 
 17. Select **Save**.
 
@@ -1433,8 +1344,7 @@ You will need to do the following:
 
 ### Create a cycle counting plan
 
-1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count
-    plans**.
+1. Go to **Warehouse management \> Setup \> Cycle counting \> Cycle count plans**.
 
 2. Select **+ New**.
 
@@ -1446,10 +1356,9 @@ You will need to do the following:
 
 6. In the **Work template** field, enter or select a value.
 
-7. In the Cycle count plan product selections area, select **+ New**.
+7. In the **Cycle count plan product selections** area, select **+ New**.
 
-8. In the **Sequence number** field, enter a number. The sort order is from the
-    smallest number to the largest number. The value must be more than 0 (zero).
+8. In the **Sequence number** field, enter a number. The sort order is from the smallest number to the largest number. The value must be more than 0 (zero).
 
 9. In the **Description** field, enter a value.
 
@@ -1526,125 +1435,131 @@ You will need to do the following:
 
 2. Select **Transfer issue** in the **Work order type** field.
 
-3. Select **+ New** in the **Location directives** FastTab.
+3. Select **+ New**.
 
 4. Enter **Transfer Issue** in the **Name** field.
 
-5. On the **Location directives** FastTab, select **Pick** in the **Work type**
-    field.
+5. On the **Location directives** FastTab, select **Pick** in the **Work type** field.
 
-6. In the **Site** field, select **3**.
+6. Select **Warehouse** in the **Warehouse selection** field.
 
-7. In the **Warehouse** field, select **30**.
+7. In the **Site** field, select **3**.
 
-8. Select **Save**.
+8. In the **Warehouse** field, select **30**.
 
-9. Select **+ New** on the **Lines** FastTab.
+9. Select **Save**.
 
-10. Verify that the **Sequence number** field is **1**.
+10. Select **+ New** on the **Lines** FastTab.
 
-11. Enter **1000** in the **To quantity** field.
+11. Verify that the **Sequence number** field is **1**.
 
-12. Select **None** in the **Locate quantity** field.
+12. Enter **1000** in the **To quantity** field.
 
-13. Select **Save**.
+13. Select **None** in the **Locate quantity** field.
 
-14. Expand the **Location Directive Actions** FastTab.
+14. Select **Save**.
 
-15. Select **+ New**.
+15. Expand the **Location Directive Actions** FastTab.
 
-16. Type **Bulk** in the **Name** field.
+16. Select **+ New**.
 
-17. Select **Save**.
+17. Type **Bulk** in the **Name** field.
 
-18. Select **+ New**.
+18. Select **Save**.
 
-19. Enter **Transfer Issue-Put** in the **Name** field.
+19. Select **+ New** in the action pane.
 
-20. Select **Put** in the **Work type** field.
+20. Enter **Transfer Issue-Put** in the **Name** field.
 
-21. In the **Site** field, select **3**.
+21. Select **Put** in the **Work type** field.
 
-22. In the **Warehouse** field, select **31**. Select **Save**.
+22. Select **Warehouse** in the **Warehouse selection** field.
 
-23. Select **+ New** on the **Lines** FastTab.
+23. In the **Site** field, select **3**.
 
-24. Verify that the **Sequence number** field is **1**.
+24. In the **Warehouse** field, select **31**. Select **Save**.
 
-25. Enter **1000** in the **To quantity** field.
+25. Select **+ New** on the **Lines** FastTab.
 
-26. Select **None** in the **Locate quantity** field. Select **Save**.
+26. Verify that the **Sequence number** field is **1**.
 
-27. Expand the **Location Directive Actions** FastTab.
+27. Enter **1000** in the **To quantity** field.
 
-28. Select **+ New**.
+28. Select **None** in the **Locate quantity** field. Select **Save**.
 
-29. Type **Bulk** in the **Name** field.
+29. Expand the **Location Directive Actions** FastTab.
 
-30. Select **Save**.
+30. Select **+ New**.
 
-31. In the left-hand pane, select **Transfer Receipt** in the **Work order
-    type** field.
+31. Type **Bulk** in the **Name** field.
 
-32. Select **+ New** in the action pane.
+32. Select **Save**.
 
-33. Enter **Transfer Issue** in the **Name** field.
+33. In the left-hand pane, select **Transfer Receipt** in the **Work order type** field.
 
-34. Select **Pick** in the **Work type** field.
+34. Select **+ New** in the action pane.
 
-35. In the **Site** field, select **3**.
+35. Enter **Transfer Issue** in the **Name** field.
 
-36. In the **Warehouse** field, select **31**.
+36. Select **Pick** in the **Work type** field.
 
-37. Select **Save**.
+37. Select **Warehouse** in the **Warehouse selection** field.
 
-38. Select **+ New** on the **Lines** FastTab.
+38. In the **Site** field, select **3**.
 
-39. Verify that the **Sequence number** field is **1**.
+39. In the **Warehouse** field, select **31**.
 
-40. Enter **1000** in the **To quantity** field.
+40. Select **Save**.
 
-41. Select **None** in the **Locate quantity** field.
+41. Select **+ New** on the **Lines** FastTab.
 
-42. Select **Save**.
+42. Verify that the **Sequence number** field is **1**.
 
-43. Expand the **Location Directive Actions** FastTab.
+43. Enter **1000** in the **To quantity** field.
 
-44. Select **+ New**.
+44. Select **None** in the **Locate quantity** field.
 
-45. Type **Bulk** in the **Name** field.
+45. Select **Save**.
 
-46. Select **Save**.
+46. Expand the **Location Directive Actions** FastTab.
 
 47. Select **+ New**.
 
-48. Type **Transfer Issue-Put** in the **Name** field.
+48. Type **Bulk** in the **Name** field.
 
-49. Select **Put** in the **Work type** field.
+49. Select **Save**.
 
-50. In the **Site** field, select **3**.
+50. Select **+ New** in the action pane.
 
-51. In the **Warehouse** field, select **32**.
+51. Type **Transfer Issue-Put** in the **Name** field.
 
-52. Select **Save**.
+52. Select **Put** in the **Work type** field.
 
-53. Select **+ New** in the **Lines** FastTab.
+53. Select **Warehouse** in the **Warehouse selection** field.
 
-54. Verify that the **Sequence number** field is **1**.
+54. In the **Site** field, select **3**.
 
-55. Type **1000** in the **To quantity** field.
+55. In the **Warehouse** field, select **32**.
 
-56. Select **None** in the **Locate quantity** field.
+56. Select **Save**.
 
-57. Select **Save**.
+57. Select **+ New** in the **Lines** FastTab.
 
-58. Expand the **Location Directive Actions** FastTab.
+58. Verify that the **Sequence number** field is **1**.
 
-59. Select **+ New**.
+59. Type **1000** in the **To quantity** field.
 
-60. Type **Bulk** in the **Name** field.
+60. Select **None** in the **Locate quantity** field.
 
 61. Select **Save**.
+
+62. Expand the **Location Directive Actions** FastTab.
+
+63. Select **+ New**.
+
+64. Type **Bulk** in the **Name** field.
+
+65. Select **Save**.
 
 ### Setup Work classes
 
@@ -1652,11 +1567,11 @@ You will need to do the following:
 
 2. Select **+ New**.
 
-3. In the **Work** class ID field, enter **'Transfer2'**.
+3. In the **Work** class ID field, enter **Transfer2**.
 
-4. In the **Description** field, enter **'Transfer'**.
+4. In the **Description** field, enter **Transfer**.
 
-5. In the **Work order type** field, select **'Transfer issue'**.
+5. In the **Work order type** field, select **Transfer issue**.
 
 6. Select **Save**.
 
@@ -1757,8 +1672,7 @@ You will need to do the following:
 
 ### Set up mobile device menu items and menu
 
-1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu
-    items**.
+1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 
 2. Select **+ New**.
 
@@ -1774,18 +1688,19 @@ You will need to do the following:
 
 8. Select a Work class ID from the list.
 
-9. Close the page.
+9. Select **Save**.
 
-10. Open **Warehouse management \> Setup \> Mobile device \> Mobile device
-    menu** and select the menu where you would like to add replenishment.
+10. Close the page.
 
-11. Select the **Replenishment** menu item from the **Available menus and menu
-    items** pane.
+11. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu** and select the menu where you would like to add replenishment.
 
-12. Select the right directional arrow to move **Replenishment** to the **Menu
-    structure** pane.
+12. Select **Edit** and then select the **Replenishment** menu item from the **AVAILABLE MENUS AND MENU ITEMS** list .
 
-13. Close the page.
+13. Select the right directional arrow to move **Replenishment** to the **MENU STRUCTURE** section.
+
+14. Select **Save**.
+
+15. Close the page.
 
 ### Set up a work template
 
@@ -1807,8 +1722,7 @@ You will need to do the following:
 
 9. Select the **Mandatory** check box.
 
-10. Select **Replenish** in the **Work class ID** field. (If it doesn’t exist,
-    create it by right selecting and choose view details.)
+10. Select **Replenish** in the **Work class ID** field. (If it doesn't exist, create it by right selecting the field and choose View details.)
 
 11. Select **+ New** in the **Work Template Details** section.
 
@@ -1832,81 +1746,87 @@ You will need to do the following:
 
 5. Select **Pick** in the **Work type** field.
 
-6. Select **3** in the **Site** field.
+6. Select **Warehouse** in the **Warehouse selection** field.
 
-7. Select **32** in the **Warehouse** field.
+7. Select **3** in the **Site** field.
 
-8. Select **Save**.
+8. Select **32** in the **Warehouse** field.
 
-9. Select **+ New** on the **Lines** FastTab.
+9. Select **Save**.
 
-10. Verify that the **Sequence number** is **1**.
+10. Select **+ New** on the **Lines** FastTab.
 
-11. Type **500** in the **To quantity** field.
+11. Verify that the **Sequence number** is **1**.
 
-12. Type **ea** in the **Unit** field.
+12. Type **500** in the **To quantity** field.
 
-13. Refresh the screen.
+13. Type **ea** in the **Unit** field.
 
-14. Select **+ New** on the **Location directive actions** FastTab.
+14. Refresh the screen.
 
-15. Type **Replenish** in the **Name** field.
+15. Select **+ New** on the **Location directive actions** FastTab.
 
-16. Refresh the screen.
+16. Type **Replenish** in the **Name** field.
 
-17. Select **Edit query**.
+17. Refresh the screen.
 
-18. Select **Add** on the **Query** page.
+18. Select **Edit query**.
 
-19. Select **Locations** in the **Table** column.
+19. Select **+ Add** on the **Query** page.
 
-20. Select **Location profile ID** in the **Field** column.
+20. Select **Locations** in the **Table** column.
 
-21. Select **BULK** in the **Criteria** column.
+21. Select **Location profile ID** in the **Field** column.
 
-22. Select **OK**.
+22. Select **BULK** in the **Criteria** column.
 
-23. Select **+ New** in the action pane.
+23. Select **OK**.
 
-24. Type **Replenish Put** in the **Name** field.
+24. Select **+ New** in the action pane.
 
-25. Select **Put** in the **Work type** field.
+25. Type **Replenish Put** in the **Name** field.
 
-26. Select **3** in the **Site** field.
+26. Select **Put** in the **Work type** field.
 
-27. Select **32** in the **Warehouse** field.
+27. Select **Warehouse** in the **Warehouse selection** field.
 
-28. Select **Save**.
+28. Select **3** in the **Site** field.
 
-29. Select **+ New** on the **Lines** FastTab.
+29. Select **32** in the **Warehouse** field.
 
-30. Verify that the **Sequence number** is **1**.
+30. Select **Save**.
 
-31. Type **500** in the **To quantity** field.
+31. Select **+ New** on the **Lines** FastTab.
 
-32. Type **ea** in the **Unit** field.
+32. Verify that the **Sequence number** is **1**.
 
-33. Refresh the screen.
+33. Type **500** in the **To quantity** field.
 
-34. Select **+ New** on the **Location Directive Actions** FastTab.
+34. Type **ea** in the **Unit** field.
 
-35. Type **Replenish Put** in the **Name** field.
+35. Refresh the screen.
 
-36. Refresh the screen.
+36. Select **+ New** on the **Location Directive Actions** FastTab.
 
-37. Select **Edit query**.
+37. Type **Replenish Put** in the **Name** field.
 
-38. Select **Add** on the **Query** page.
+38. Refresh the screen.
 
-39. Select **Locations** in the **Derived table** column.
+39. Select **Edit query**.
 
-40. Select **Location profile ID** in the **Field** column.
+40. Select **+ Add** on the **Query** page.
 
-41. Select **PRODIN** in the **Criteria** column.
+41. Select **Locations** in the **Derived table** column.
 
-42. Select **OK**.
+42. Select **Location profile ID** in the **Field** column.
 
-43. Close the **Location directives** page.
+43. Select **PRODIN** in the **Criteria** column.
+
+44. Select **OK**.
+
+45. Select **Save**.
+
+46. Close the **Location directives** page.
 
 ### Set up a wave template
 
@@ -1920,30 +1840,27 @@ You will need to do the following:
 
 5. Type **30 Replenish** in the **Wave template description** field.
 
-6. Select **3** in the **Site** field.
+6. In the **Warehouse selection**, select **Warehouse**.
 
-7. Select **30** in the **Warehouse** field.
+7. Select **3** in the **Site** field.
 
-8. Set the **Automate wave creation**, **Process wave at release to
-    warehouse**, **Automate wave release**, and **Automate replenishment work
-    release** sliders to **Yes**.
+8. Select **30** in the **Warehouse** field.
 
-9. Expand the **Methods** FastTab and verify that the **createLoads**,
-    **allocateWave**, and **createWork** methods are selected.
+9. Set the **Automate wave creation**, **Process wave at release to warehouse**, **Automate wave release**, and **Automate replenishment work release** sliders to **Yes**.
 
-10. Select **Replenish** from the **Remaining methods** pane.
+10. Expand the **Methods** FastTab and verify that the **createLoads**, **allocateWave**, and **createWork** methods are selected.
 
-11. Select the right directional arrow to move **Replenish** to the **Selected
-    methods** pane.
+11. Select **Replenish** from the **REMAINING METHODS** list.
 
-12. Wave step code can be 4.
+12. Select the right directional arrow to move **Replenish** to the **Selected methods** pane.
 
-13. Close the page.
+13. Select **4** for **Wave step code**.(If it doesn't exist, create it by right selecting the field and choose View details.)
+
+14. Close the page.
 
 ### Set up a replenishment template
 
-1. Open **Warehouse management \> Setup \> Replenishment \> Replenishment
-    templates**.
+1. Open **Warehouse management \> Setup \> Replenishment \> Replenishment templates**.
 
 2. Select **+ New**.
 
@@ -1975,13 +1892,13 @@ You will need to do the following:
 
 16. Select **Save**.
 
-17. Open **Warehouse management \> Setup \> Waves \> Wave template**.
+17. Open **Warehouse management \> Setup \> Waves \> Wave templates**.
 
 18. Select **30 Replenish** from the list of wave templates.
 
 19. Select **Edit**.
 
-20. In the **Selected Methods** pane, select the replenish method and enter
+20. In the **Selected Methods** list, select the replenish method and enter
     **200** in the **Wave step code** field.
 
 21. Select **Save**.
@@ -1996,8 +1913,7 @@ You will need to do the following:
 
 2. Open **Warehouse management \> Replenishment \> Load demand replenishment**.
 
-3. On the **Load demand replenishment** page, select **Rep Demand** in the
-    **Replenish template** field.
+3. On the **Load demand replenishment** page, select **Rep Demand** in the **Replenish template** field.
 
 4. Expand the **Run in the background** FastTab.
 
@@ -2010,11 +1926,11 @@ You will need to do the following:
 
 8. In the **Start time** field, enter **7:00 PM**.
 
-9. Select the **End by** button and enter a date six weeks from today's date.
+9. Select the **END BY:** button and enter a date six weeks from today's date.
 
-10. In the **Recurrence Pattern** area, select the **Days** button.
+10. In the **RECURRENCE PATTERN** area, select the **Days** button.
 
-11. Select the **Every weekday** button.
+11. Select the **EVERY WEEKDAY** button.
 
 12. Select **OK**.
 
@@ -2040,42 +1956,44 @@ You will need to do the following:
 
 ### Create an outbound location directive
 
-1. Open **Warehouse management \> Setup \> Location directives.**
+1. Open **Warehouse management \> Setup \> Location directives**.
 
 2. In the **Work order type** field, select **Sales orders**.
 
-3. Select **New.**
+3. Select **+ New**
 
 4. Enter **30 Pick2** in the **Name** field.
 
 5. Select **Pick** in the **Work type** field.
 
-6. Select **3** in the **Site** field.
+6. In the **Warehouse selection** field, select **Warehouse**.
 
-7. Select **30** in the **Warehouse** field.
+7. Select **3** in the **Site** field.
 
-8. Select **Save** on the action pane.
+8. Select **30** in the **Warehouse** field.
 
-9. In the **Lines** FastTab, select **+ New**.
+9. Select **Save** in the action pane.
 
-10. In the **From quantity** field, enter **0**.
+10. In the **Lines** FastTab, select **+ New**.
 
-11. In the **To quantity** field, enter **9999**.
+11. In the **From quantity** field, enter **0**.
 
-12. Leave the Unit field blank.
+12. In the **To quantity** field, enter **9999**.
 
-13. Select **None** in the **Locate quantity** field.
+13. Leave the Unit field blank.
 
-14. Select **Save** in the action pane.
+14. Select **None** in the **Locate quantity** field.
 
-15. In the **Location directive actions** FastTab, select **+ New**.
+15. Select **Save** in the action pane.
 
-16. In the **Name** field, enter **Pick**.
+16. In the **Location directive actions** FastTab, select **+ New**.
 
-17. In the **Fixed location usage** field, select **Fixed and non-fixed
+17. In the **Name** field, enter **Pick**.
+
+18. In the **Fixed location usage** field, select **Fixed and non-fixed
     locations.**
 
-18. Select **Save** on the action pane.
+19. Select **Save** in the action pane.
 
 ### Create an Outbound Work Template
 
@@ -2136,6 +2054,9 @@ it to the warehouse.
 
 8. In the **Item number** field, select **P9500**.
 
+   > [!NOTE]
+   > If you receive an error indicating that an enabled pricing tree cannot be found, you may need to create and enable a price tree before continuing.
+
 9. Enter **4** in the **Quantity** field.
 
 10. Expand the **Line Details** FastTab.
@@ -2144,14 +2065,16 @@ it to the warehouse.
 
 12. Select **Manual** in the **Reservation** drop-down list.
 
-13. On the **Sales order lines** FastTab, select **Inventory** \>
-    **Reservation**.
+13. On the **Sales order lines** FastTab, select **Inventory** \> **Reservation**.
 
 14. Enter **4** in the **Reservation** field.
 
 15. Select the **Inventory status** check box.
 
 16. Select **Reserve lot**.
+
+    > [!NOTE]
+    > If the full quantity cannot be reserved, reserve the available quantity or receive the remaining inventory before continuing.
 
 17. Close the reservation form.
 
@@ -2161,7 +2084,10 @@ it to the warehouse.
 
 2. Select **Release to warehouse** in the **Actions** group.
 
-3. An information bar confirms that the shipment is created (or not).
+3. Review the notification to confirm whether the sales order was released to the warehouse.
+
+   > [!NOTE]
+   > If the sales order cannot be released, continue to the next exercise.
 
 4. Close the information bar.
 
@@ -2210,8 +2136,7 @@ You will need to do the following:
 
 ### Create the Cluster Picking menu item
 
-1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu
-    items**.
+1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 
 2. Select **+ New** in the action pane.
 
@@ -2221,7 +2146,7 @@ You will need to do the following:
 
 5. Select **Work** in the **Mode** field.
 
-6. Select the **Use Existing Work** slider to **Yes**.
+6. Set the **Use Existing Work** slider to **Yes**.
 
 7. Select **Cluster picking** in the **Directed by** field.
 
@@ -2243,17 +2168,15 @@ You will need to do the following:
 
 ### Add the menu item to the mobile device
 
-1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device
-    menu**.
+1. Open **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
 
 2. Select **Main** in the left-hand pane.
 
 3. Select **Edit**.
 
-4. Select **Cluster Picking** from the **Available menus and menu items** pane.
+4. Select **Cluster Picking** from the **AVAILABLE MENUS AND MENU ITEMS** list.
 
-5. Select the directional arrow to move the selection to the **Menu structure**
-    pane.
+5. Select the directional arrow to move the selection to the **MENU STRUCTURE**pane.
 
 6. Select **Save** in the action pane.
 
@@ -2329,7 +2252,7 @@ You will need to do the following:
 
 3. Select **Edit** in the action pane.
 
-4. Update the **Packing profile ID** field to **PACK2**.
+4. Update the **Packing profile ID** field to **PACK2**. (If it doesn't exist, create it by right selecting the field and choose View details.)
 
 5. Select **Save** in the action pane.
 
@@ -2343,23 +2266,25 @@ You will need to do the following:
 
 4. In the **Wave template description** field, enter a value.
 
-5. In the **Site** field, enter or select a value.
+5. In the **Warehouse selection** field, select **Warehouse**.
 
-6. In the **Warehouse** field, enter or select a value.
+6. In the **Site** field, enter or select a value.
 
-7. Select **Save**.
+7. In the **Warehouse** field, enter or select a value.
 
-8. Expand the **Methods** section. The **Selected methods** pane lists the
-    methods for the selected wave template type. The wave template must include
-    the containerize method.
+8. In the **Warehouse** field, enter or select a value.
 
-9. In the list, find and select the desired record.
+9. Select **Save**.
 
-10. In the **Wave step code** field, enter a value. Enter a Wave step code for
-    the added method, which can be any code. It’s possible to add the method
-    more than once and assign different wave step codes. To do this, select
-    **Repeatable** for this method in the **Wave process methods** page.
+10. Expand the **Methods** section. The **SELECTED METHODS** list shows the methods for the selected wave template type. The wave template must include the containerization method.
 
-11. Select **Save**.
+11. In the list, find and select the desired record.
 
-12. Close the page.
+12. In the **Wave step code** field, enter a value. Enter a Wave step code for the added method, which can be any code, or create one if needed. It's possible to add the method more than once and assign different wave step codes. To do this, select **Repeatable** for this method in the **Wave process methods** page.
+
+13. Select **Save**.
+
+    > [!NOTE]
+    > If the wave template cannot be validated, ensure that a container build template exists and uses the same Wave step code as the containerization method.
+
+14. Close the page.
