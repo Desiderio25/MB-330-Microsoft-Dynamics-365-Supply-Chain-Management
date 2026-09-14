@@ -61,7 +61,7 @@ help her to use?**
 
 ### Create and process a purchase requisition
 
-1. In Microsoft Dynamics 365 Supply Chain Management, go to **Procurement and sourcing \> Purchase requisitions \> All purchase requisitions**.
+1. In USMF, go to **Procurement and sourcing \> Purchase requisitions \> All purchase requisitions**.
 
 2. Select **+ New**.
 

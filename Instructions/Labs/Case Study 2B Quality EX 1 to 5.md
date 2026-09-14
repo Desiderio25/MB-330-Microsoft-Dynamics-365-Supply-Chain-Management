@@ -60,7 +60,7 @@ process the quality order.
 
 ### Enable quality management
 
-1. In Microsoft Dynamics 365 Supply Chain Management, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+1. In USMF, go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
 
 2. Select the **Quality management** tab.
 

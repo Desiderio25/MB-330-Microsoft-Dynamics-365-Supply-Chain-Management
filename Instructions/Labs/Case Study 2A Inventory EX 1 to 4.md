@@ -64,7 +64,7 @@ data entities.
 
 ### Initialize stock levels in the warehouse using movement journals
 
-1. In Microsoft Dynamics 365 Supply Chain Management, under **Modules**, go to **Inventory management \> Journal entries \> Items \> Movement**.
+1. In USMF, under **Modules**, go to **Inventory management \> Journal entries \> Items \> Movement**.
 
 2. Select **+ New**.
 

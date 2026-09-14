@@ -29,7 +29,7 @@ In this exercise, you'll help the system administrator at USMF use the Landed co
 
 ### Set up the General tab
 
-1. In Microsoft Dynamics 365 Supply Chain Management, open **Landed cost \> Setup \> Landed cost parameters**.
+1. In USMF, open **Landed cost \> Setup \> Landed cost parameters**.
 
 2. On the **General** tab, expad the **General** FastTab.
 

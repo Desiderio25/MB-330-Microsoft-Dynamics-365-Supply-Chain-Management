@@ -34,10 +34,9 @@ You will need to do the following:
 
 ### Set up a new carrier
 
-1. In USMF, Open **Transportation management** \> **Setup** \> **Carriers** \> **Shipping
-carriers**.  
+1. In USMF, open **Transportation management** \> **Setup** \> **Carriers** \> **Shipping carriers**.
 
-2. In the action pane, select **New** to create a new shipping carrier.  
+2. In the action pane, select **+ New** to create a new shipping carrier.  
 
 3. In the **Shipping carrier** field, enter **Ocean Carrier 2**.
 
@@ -51,18 +50,18 @@ carriers**.  
 
 8. Select vendor account **1002** from the **Vendor** drop-down menu.  
 
-9. In the **SCAC** field, enter **2005.**
+9. In the **SCAC** field, enter **2005**.
 
-10. Set the **Activate carrier rating** slider to **Yes.**
+10. Set the **Activate carrier rating** slider to **Yes**.
 
-11. On the **Addresses** FastTab, select **New**.
+11. On the **Addresses** FastTab, select **+ New**.
 
 12. In the **New address** form, enter **Ocean carrier location** in the **Name**
     field.
 
 13. Select **Business** from the **Purpose** drop-down list.
 
-14. Select USA in the Country/region drop-down list.
+14. Select **USA** in the **Country/region** drop-down list.
 
 15. In the **ZIP/postal code** field, enter **11251**.
 
@@ -70,20 +69,21 @@ carriers**.  
 
 17. Set the **Primary** slider to **Yes**.
 
-18. Select **OK.**
+18. Select **OK**.
 
-19. Close the **Shipping carriers** form.
+19. Select **Save**.
+
+20. Close the **Shipping carriers** form.
 
 ### Add a carrier service to the carrier
 
-1. Open **Transportation management \> Setup \> Carriers \> Shipping
-    carriers.**
+1. Open **Transportation management \> Setup \> Carriers \> Shipping carriers**.
 
 2. Select **Ocean Carrier 2** in the left-hand pane.
 
 3. Expand the **Services** FastTab.
 
-4. Select **New.**
+4. Select **+ New**.
 
 5. In the **Carrier service** field, enter **Ocean**.  
 
@@ -114,123 +114,110 @@ You will need to do the following:
 
 - Assign the rate base.
 
-### Set up rate master
+### Set up a rate master
 
-1. Go to **Transportation management \> Setup \> Rating \> Rate master.**
+1. Go to **Transportation management** \> **Setup** \> **Rating** \> **Rate
+    master**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. In the Rate master field, enter **AtlantaMaster**.
+3. In the **Rate master** field, enter **AtlantaMaster**.
 
-4. In the Name field, enter **Atlanta rate master**.
+4. In the **Name** field, enter **Atlanta rate master**.
 
-5. In the Rating metadata ID field, select the drop-down button to open the
-    lookup.
+5. In the **Rating metadata ID** field, select the drop-down button to open the lookup.
 
-    - The rating metadata ID will determine the data needed for the rate
-        master, as it defines the metadata expected by the TMS engine using this
-        rate master.
+    - The rating metadata ID will determine the data needed for the rate master, as it defines the metadata expected by the TMS engine using this rate master.
 
 6. For this example, select the **P2P** option.
 
-7. Select Save.
+7. Select **Save**.
 
 ### Set up rate base
 
 1. Select **Rate base**.
 
-    - The rate base determines the rate of the carrier and can be used to set
-        up a tariff structure as it structures the rates in the breakpoints
-        defined in the break master.
+    - The rate base determines the rate of the carrier and can be used to set up a tariff structure as it structures the rates in the breakpoints defined in the break master.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Rate base** field, enter **AtlantaBase**.
 
-4. In the **Name field**, enter **Atlanta rate base**.
+4. In the **Name** field, enter **Atlanta rate base**.
 
-5. In the **Break master** field, select the drop-down button to open the
-    lookup.
+5. In the **Break master** field, select the drop-down button to open the lookup.
 
-    - Break masters are used to define the pricing structure and its
-        breakpoints. The pricing structure uses tiered pricing that is based on
-        physical dimensions.
+    - Break masters are used to define the pricing structure and its breakpoints. The pricing structure uses tiered pricing that is based on physical dimensions.
 
-For this example, use **weight.**
+    For this example, use **Weight**.
 
-1. Toggle the expansion of the **Details** section.
+6. Expand the **Details** section.
 
-2. Select **New**.
+7. Select **+ New**.
 
-3. In the **Drop-off Postal Code From** field, enter **30301**.
+8. In the **Drop-off Postal Code From** field, enter **30301**.
 
-4. In the **Drop-off Postal Code To** field, enter **30318**.
+9. In the **Drop-off Postal Code To** field, enter **30318**.
 
-5. In the **Drop-off Country Region** field, enter **USA**.
+10. In the **Drop-off Country Region** field, enter **USA**.
 
-6. In the **\<1.00 Lbs** field, enter **100**.
+11. In the **\<1.00 Lbs** field, enter **100**.
 
     - Insert the rate per lbs if the total weight of the load is less than 1
         pound.
 
-7. In the **\<5.00 Lbs** field, enter **300**.
+12. In the **\<5.00 Lbs** field, enter **300**.
 
     - Insert the rate per lbs if the total weight of the load is less than 5
         pounds.
 
-8. In the **\<20.00 Lbs** field, enter **500**.
+13. In the **\<20.00 Lbs** field, enter **500**.
 
     - Insert the rate per lbs if the total weight of the load is less than 20
         pounds.
 
-9. In the **\<100.00** Lbs field, enter **1000**.
+14. In the **\<100.00 Lbs** field, enter **1000**.
 
     - Insert the rate per lbs if the total weight of the load is less than 100
         pounds.
 
-10. In the **\<1,000.00** Lbs field, enter **3000**.
+15. In the **\<1,000.00 Lbs** field, enter **3000**.
 
     - Insert the rate per lbs if the total weight of the load is less than
         1000 pounds.
 
-11. Select **Save**.
+16. Select **Save**.
 
-12. Close the page.
+17. Close the page.
 
 ### Assign rate base
 
-1. Toggle the expansion of the **Rate base assignments** section.
+1. In the **Rate base assignments** section, select **+ New**.
 
-2. Select **New**.
+    - You can have several rate base assignments for each rate master. This makes it possible to create several different price points for each carrier depending on destinations, services, or different rate bases. In this procedure you will only create one rate base assignment.
 
-    - You can have several rate base assignments for each rate master. This
-        makes it possible to create several different price points for each
-        carrier depending on destinations, services, or different rate bases. In
-        this procedure you will only create one rate base assignment.
+2. In the **Name** field, enter **AtlantaRateAssignment**.
 
-3. In the Name field, enter **AtlantaRateAssignment**.
+3. In the **Rate base** field, select the drop-down button to open the lookup.
 
-4. In the Rate base field, select the drop-down button to open the lookup.
+4. In the list, select **AtlantaBase**.
 
-5. In the list, select **AtlantaBase**.
+5. In the **Service** field, select the drop-down button to open the lookup.
 
-6. In the Service field, select the drop-down button to open the lookup.
+6. In the list, find and select **Truck**.
 
-7. In the list, find and select **Truck**.
+7. In the **Pick-up Postal Code** field, enter **98052**.
 
-8. In the Pick-up Postal Code field, enter **98052**.
+    - Specify which postal code this rate base assignment should be valid from.
 
-    - Specify which postal code this rate base assignment should be valid
-        from.
+8. In the **Pick-up Country Region** field, enter **USA**.
 
-9. In the **Pick-up Country Region** field, enter **USA**.
+9. Select **Save**.
 
-10. Select **Save**.
-
-Exercise \#3 Setup route plans and route guides (Bonus)
+Exercise #3 Set up route plans and route guides (Bonus)
 --------------------------------------------------------
 
-*Objective: Configure a route pan, hub, and route guide.*
+*Objective: Configure a route plan, hub, and route guide.*
 
 You were asked to help the logistics manager at **USMF** to setup route plans
 and route guides.
@@ -247,10 +234,9 @@ You will need to do the following:
 
 ### Create a new route plan named “GA to LA”
 
-1. Open **USMF \> Transportation management \> Setup \> Routing \> Route
-    plans.**  
+1. In USMF, open **Transportation management** \> **Setup** \> **Routing** \> **Route plans**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Route plan** field, enter **GA to LA**.
 
@@ -262,7 +248,7 @@ You will need to do the following:
 
 1. Open **Transportation management \> Setup \> Routing \> Hub masters**.  
 
-2. Select **New**.  
+2. Select **+ New**.  
 
 3. In the **Hub** field, enter **Georgia 3**.
 
@@ -270,7 +256,7 @@ You will need to do the following:
 
 5. Expand the **Codes** FastTab.
 
-6. In the **Hub type** field, select Hub.
+6. In the **Hub type** field, select **Hub**.
 
 7. In the **Rate master** field, select **TruckRateMaster**.  
 
@@ -278,7 +264,7 @@ You will need to do the following:
 
 9. In the **Effective start date and time** field, select **Today**.
 
-10. In the **Effective end date and time** field, select **12/31/2025**.
+10. In the **Effective end date and time** field, select **12/31/2026**.
 
 11. Expand the **Address** FastTab.
 
@@ -292,7 +278,7 @@ You will need to do the following:
 
 16. Select **OK**.
 
-17. Select **New**.  
+17. Select **+ New** in the Action pane.  
 
 18. In the **Hub** field, enter **Los Angeles 2**.
 
@@ -300,7 +286,7 @@ You will need to do the following:
 
 20. Expand the **Codes** FastTab.
 
-21. In the **Hub type** field, select Hub.
+21. In the **Hub type** field, select **Hub**.
 
 22. In the **Rate master** field, select **TruckRateMaster**.  
 
@@ -308,7 +294,7 @@ You will need to do the following:
 
 24. In the **Effective start date and time** field, select **Today**.
 
-25. In the **Effective end date and time** field, select **12/31/2025**.
+25. In the **Effective end date and time** field, select **12/31/2026**.
 
 26. Expand the **Address** FastTab.
 
@@ -322,15 +308,17 @@ You will need to do the following:
 
 31. Select **OK**.
 
-32. Close the form.
+32. Select **Save**.
+
+33. Close the form.
 
 ### Add details to the route plan
 
-1. Open **Transportation management \> Setup \> Routing \> Route plans.**  
+1. Open **Transportation management** \> **Setup** \> **Routing** \> **Route plans**.
 
 2. Select the **GA to LA** route plan.
 
-3. On the **Details** FastTab, select **New**.  
+3. On the **Details** FastTab, select **+ New**.  
 
 4. In the **Origin hub** field, select **Georgia 3**.
 
@@ -350,9 +338,9 @@ service Truck.  
 
 ### Create a new routing guide named “GA to LA”
 
-1. In **USMF**, go to **Transportation management** \> **Setup** \> **Routing** \> **Route guides.**  
+1. In **USMF**, go to **Transportation management** \> **Setup** \> **Routing**\> **Route guides**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. In the **Routing guide** field, enter **GA to LA**.
 
@@ -396,7 +384,7 @@ service Truck.  
 
 18. Select **Save**.
 
-Exercise \#4 Process inbound shipments (Bonus)
+Exercise #4 Process inbound shipments (Bonus)
 -----------------------------------------------
 
 *Objective: Configure a route and manage inbound shipments.*
@@ -463,7 +451,7 @@ route plan and guide between the Ade Supply Company and USMF’s Warehouse 61.
 
 1. Open **Transportation management \> Setup \> Routing \> Hub masters**.
 
-2. Select **New** in the action pane.
+2. Select **+ New** in the action pane.
 
 3. In the **Hub** field, enter **Ade Supply.**
 
@@ -490,13 +478,13 @@ route plan and guide between the Ade Supply Company and USMF’s Warehouse 61.
 
 1. Open **Transportation management \> Setup \> routing \> Route plans**.
 
-2. Select **New** in the action pane.
+2. Select **+ New** in the action pane.
 
 3. In the **Route plan** field, enter **NH to WA**.
 
 4. In the **Name** field, enter **New Hampshire to Washington**.
 
-5. In the **Details** FastTab, select **New**.
+5. In the **Details** FastTab, select **+ New**.
 
 6. In the **Origin hub** field, select **Ade Supply**.
 
@@ -514,24 +502,21 @@ route plan and guide between the Ade Supply Company and USMF’s Warehouse 61.
 
 1. Open **Transportation management \> Setup \> Routing \> Route guides**.
 
-2. Select **New** in the action pane.
+2. Select **+ New** in the action pane.
 
 3. In the **Routing guide** field, enter **NH to WA**.
 
 4. In the **Name** field, enter **New Hampshire to Washington**.
 
-5. In the **Origin** FastTab, in the **ZIP/postal code** field, enter
-    **00210**.
+5. In the **Origin** FastTab, in the **ZIP/postal code** field, enter **00210**.
 
-6. In the **Destination** FastTab, in the **ZIP/postal code** field, enter
-    **98052**.
+6. In the **Destination** FastTab, in the **ZIP/postal code** field, enter **98052**.
 
-7. In the **Result** FastTab, in the **Route plan** field, select **NH to
-    WA**.
+7. In the **Result** FastTab, in the **Route plan** field, select **NH to WA**.
 
 8. Close the form.
 
-### Initiate an Inbound Shipment
+### Initiate an inbound shipment
 
 You have been asked to create a new purchase order for 10 mini-speakers from the
 Ade Supply Company. After creating the purchase order, you will need to create
@@ -542,10 +527,9 @@ transportation rate.
 
 1. Open **Accounts payable \> Purchase orders \> All purchase orders**.
 
-2. Select **New** in the action pane.
+2. Select **+ New** in the action pane.
 
-3. On the **Create purchase order** form, in the **Vendor account** field,
-    select **1003**.
+3. On the **Create purchase order** form, in the **Vendor account** field, select **1003**.
 
 4. In the **General** FastTab, in the **Site** field, select **6**.
 
@@ -553,8 +537,7 @@ transportation rate.
 
 6. Select **OK**.
 
-7. In the **Purchase order lines** FastTab, in the **Item number** field, enter
-    **L0101**.
+7. In the **Purchase order lines** FastTab, in the **Item number** field, enter **L0101**.
 
 8. In the **Quantity** field, enter **10**.
 
@@ -564,22 +547,19 @@ transportation rate.
 
 ### Create an inbound shipment
 
-1. In the **Warehouse** tab on the action pane, select **Load planning
-    workbench**.
+1. In the **Warehouse** tab on the action pane, select **Load planning workbench**.
 
 2. Select the check mark column for the purchase order line.
 
 3. In the **Supply and demand** tab on the action pane, select **To new load**.
 
-4. In the **Load template assignment** form, in the **Load template ID** field,
-    select **Stnd Load template**.
+4. In the **Load template assignment** form, in the **Load template ID** field, select **Stnd Load template**.
 
 5. Select **OK**.
 
 ### Rate shop for the inbound load
 
-1. In the **Loads** tab of the Load planning workbench, select **Rate route
-    workbench** from the **Rating and routing** drop-down menu.
+1. In the **Loads** tab of the Load planning workbench, select **Rate route workbench** from the **Rating and routing** drop-down menu.
 
 2. In the action pane of the Rate route workbench, select **Rate shop**.
 
@@ -589,7 +569,7 @@ transportation rate.
 
 5. Select **Assign**.
 
-### Process an Inbound Shipment
+### Process an inbound shipment
 
 Now that the inbound shipment has been created and rated, you need to schedule
 an appointment for the mini-speaker shipment. You’ve also been asked to schedule
@@ -599,29 +579,23 @@ driver Tim Smith in and out of the appointment.
 
 1. Open **Transportation management \> Planning \> Load planning workbench**.
 
-2. In the **Loads** tab, select the load ID for the purchase order created in
-    the earlier practice.
+2. In the **Loads** tab, select the load ID for the purchase order created in the earlier practice.
 
-3. Select **Appointment scheduling** from the **Transportation** drop-down
-    menu.
+3. Select **Appointment scheduling** from the **Transportation** drop-down menu.
 
-4. In the **Appointment scheduling** form, select **New** in the action pane.
+4. In the **Appointment scheduling** form, select **+ New** in the action pane.
 
-5. In the **Appointment details** FastTab, in the **Appointment rule** field,
-    select **Inbound docks 61**.
+5. In the **Appointment details** FastTab, in the **Appointment rule** field, select **Inbound docks 61**.
 
 6. Select **Save**.
 
-7. In the action pane, select the **Update status** drop-down arrow and select
-    **Firm**.
+7. In the action pane, select the **Update status** drop-down arrow and select **Firm**.
 
 ### Check the driver in
 
-1. In the action pane, select the **Update status** drop-down arrow and select
-    **Driver check-in**.
+1. In the action pane, select the **Update status** drop-down arrow and select **Driver check-in**.
 
-2. In the **Driver check-in details** form, in the **Driver name** field, enter
-    **Tim Smith**.
+2. In the **Driver check-in details** form, in the **Driver name** field, enter **Tim Smith**.
 
 3. In the **Driver license** field, enter **123**.
 
@@ -641,7 +615,7 @@ driver Tim Smith in and out of the appointment.
 
 4. Close the form.
 
-### Confirm an Inbound Shipment
+### Confirm an inbound shipment
 
 You now need to confirm the inbound load.
 
@@ -653,15 +627,14 @@ You now need to confirm the inbound load.
 
 3. Select the load ID.
 
-4. In the **Load details** form, select the **Ship and receive** tab in the
-    action pane, and then select **Inbound shipment** in the **Confirm** area.
+4. In the **Load details**section, select the **Ship and receive** tab, and then select **Inbound shipment** in the **Confirm** area.
 
 5. Close the form.
 
-Exercise \#5 Process outbound shipments
+Exercise #5 Process outbound shipments
 ----------------------------------------
 
-*Objective: Manage an outbound shipment and a consolidated shipment*
+*Objective: Manage an outbound shipment and a consolidated shipment.*
 
 The logistics manager at USMF, would like to process an outbound shipment for
 Desert Wholesales.
@@ -680,28 +653,28 @@ You need do the following:
 - Initiate an outbound shipment.
 
 - Create a consolidated shipment.
-    > **NOTE** There's an exclusion on sales orders lesser than $10,000 for all customers. The sales order may provide an informational message that the order amount may be less than or equal to the sales order exclusion amount in the sales order rule and will not be sent to credit management. Before the execution of this task, view blocking rules and exclusion rules on the **Credit and collections** > **Setup** > **Credit management setup** > **Blocking rules page**.
 
-### Initiating an Outbound Shipment
+> [!NOTE]
+> There's an exclusion on sales orders less than $10,000 for all customers. The sales order may provide an informational message that the order amount is less than or equal to the sales order exclusion amount in the sales order rule and won't be sent to credit management. Before executing this task, view the blocking and exclusion rules on the **Credit and collections** \> **Setup** \> **Credit management setup** \> **Blocking rules** page.
+
+### Initiate an outbound shipment
 
 You have been asked to confirm a sales order for Desert Wholesales, reserve
 stock for the order, and create an outbound transportation load.
 
 ### Receive and confirm the sales order
 
-1. Open **Sales and marketing \> Customers \> All customers**.  
+1. Open **Sales and marketing** \> **Customers** \> **All customers**.
 
 2. In the list of customers, select the line for account **US-007**.
 
 3. In the action pane, select the **Sell** tab.
 
-4. In the **New** group, select **Sales order**.
+4. In the **+ New** group, select **Sales order**.
 
-5. In the **Sales order** form, expand the **Sales order lines** FastTab, if
-    not expanded already.
+5. In the **Sales order** form, expand the **Sales order lines** FastTab, if not expanded already.
 
-6. In the existing sales order line, in the **Item number** field, enter
-    **A0001**.
+6. In the **Sales order lines** section, in the **Item number** field, enter **A0001**.
 
 7. In the **Quantity** field, enter **5**.
 
@@ -713,19 +686,23 @@ stock for the order, and create an outbound transportation load.
 
 11. In the action pane, select **Save**.
 
-12. In the action pane, select the **Sell** tab.
+12. Select **Complete**, and then select **Submit**.
 
-13. In the **Generate** area, select **Confirm sales order**.
+13. On the **Sell** tab, select **Orders**.
 
-14. Confirm the information on the **Confirm sales order** form and select
-    **OK**.
+14. Select the relevant sales order
 
-15. Select **OK** to post without printing.
+15. Select the **Sell** tab, in the action Pane.
+
+16. In the **Generate** area, select **Confirm sales order**.
+
+17. Confirm the information on the **Confirm sales order** form.
+
+18. Select **OK** to post without printing.
 
 ### Reserve stock for the order
 
-1. In the **Sales order details** form, select the order line in the **Sales
-    order lines** FastTab.
+1. In the **Sales order details** form, select the order line in the **Sales order lines** FastTab.
 
 2. Select the **Inventory** drop-down arrow and select **Reservation**.
 
@@ -737,8 +714,7 @@ stock for the order, and create an outbound transportation load.
 
 ### Create an outbound transportation load
 
-1. In the **Sales order details** form, select the **Warehouse** tab in the
-    action pane.
+1. In the **Sales order details** form, select the **Warehouse** tab in the action pane.
 
 2. In the **Loads** area, select **Load planning workbench**.
 
@@ -748,14 +724,13 @@ stock for the order, and create an outbound transportation load.
 
 5. In the **Add** area, select **To new load**.
 
-6. In the **Load template assignment** form, select **Stnd Load Template** from
-    the **Load template ID** drop-down menu.
+6. In the **Load template assignment** form, select **Stnd Load Template** from the **Load template ID** drop-down menu.
 
 7. Select **OK**.
 
 8. Select **OK** to confirm exceeding capacity.
 
-### Creating a Consolidated Shipment
+### Create a consolidated shipment
 
 Desert Wholesales wants to add another line to their sales order. They request
 that both sales order lines arrive in one consolidated load. You have been
@@ -763,13 +738,11 @@ tasked with creating the consolidated load and confirming it.
 
 ### Set up parameters for consolidated shipments
 
-1. Open **Transportation management \> Setup \> Transportation management
-    parameters**.
+1. Open **Transportation management \> Setup \> Transportation management parameters**.
 
 2. Select the **General** tab.
 
-3. In the **In transit planning** FastTab, set the **In transit planning**
-    slider to **Yes**.
+3. In the **In transit planning** FastTab, set the **In transit planning** slider to **Yes**.
 
 4. Close the form.
 
@@ -779,27 +752,28 @@ tasked with creating the consolidated load and confirming it.
 
 2. Select the current sales order for Desert Wholesales.
 
-3. In the **Sales order details** form, in the **Sales order lines** FastTab,
-    select **Add line**.
+3. In the **Sales order** tab, select **Modify**.
 
-4. In the **Item number** field, enter **A0002**.
+4. In the **Sales order details** form, in the **Sales order lines** FastTab, select **+ Add line**.
 
-5. In the **Quantity** field, enter **5**.
+5. In the **Item number** field, enter **A0002**.
 
-6. For **Site**, select **5**.
+6. In the **Quantity** field, enter **5**.
 
-7. In the action pane, select the **Sell** tab.
+7. For **Site**, select **5**.
 
-8. In the **Generate** area, select **Confirm sales order**.
+8. In the action pane, select the **Complete** tab, and then select **Submit**.
 
-9. Confirm the information on the Confirm sales order form and select **OK**.
+9. In the action pane, select the **Sell** tab.
 
-10. Select **OK** to post without printing.
+10. In the **Generate** area, select **Confirm sales order**.
+
+11. Confirm the information on the **Confirm sales order** form and select **OK** to post without printing.
+
 
 ### Reserve stock for the order
 
-1. In the **Sales order details** form, select one of the order lines in the
-    **Sales order lines** FastTab.
+1. In the **Sales order details** form, select one of the order lines in the **Sales order lines** FastTab.
 
 2. Select the **Inventory** drop-down arrow and select **Reservation**.
 
@@ -822,8 +796,7 @@ tasked with creating the consolidated load and confirming it.
 
 5. In the **Add** area, select **To new load**.
 
-6. In the **Load template assignment** form, select **Stnd Load Template** from
-    the **Load template ID** drop-down menu.
+6. In the **Load template assignment** form, select **Stnd Load Template** from the **Load template ID** drop-down menu.
 
 7. Select **OK**.
 
@@ -831,26 +804,21 @@ tasked with creating the consolidated load and confirming it.
 
 ### Add hub consolidation and rate both loads
 
-1. In the **Load planning workbench**, select the first load you created in the
-    **Loads** tab.
+1. In the **Load planning workbench**, select the first load you created in the **Loads** tab.
 
 2. Select **Hub consolidation** in the **Transportation** drop-down menu.
 
-3. In the **Override location** form, select the **Hub** drop-down arrow and
-    select **Los Angeles**.
+3. In the **Override location** form, select the **Hub** drop-down arrow and select **Los Angeles**.
 
 4. Select **OK**.
 
 5. Select the load line in the **Loads** tab.
 
-6. Select **Rate route workbench** from the **Rating and routing** drop-down
-    menu.
+6. Select **Rate route workbench** from the **Rating and routing** drop-down menu.
 
-7. In the **Rate route workbench**, select **Route with rate** in the action
-    pane.
+7. In the **Rate route workbench**, select **Route with rate** in the action pane.
 
-8. In the **Route Results** FastTab, select route guide **Wh 61 to Cust 003 004
-    019**.
+8. In the **Route Results** FastTab, select route guide **Wh 61 to Cust 003 004 019**.
 
 9. Select **Assign**.
 
@@ -866,15 +834,14 @@ tasked with creating the consolidated load and confirming it.
 
 3. In the **Add** area, select **To new load**.
 
-4. In the **Load template assignment** form, select **Stnd Load Template** from
-    the **Load template ID** drop-down menu.
+4. In the **Load template assignment** form, select **Stnd Load Template** from the **Load template ID** drop-down menu.
 
 5. Select **OK**.
 
 6. Select **OK** to confirm exceeding capacity.
 
-*Note:* The consolidated load may take several minutes to appear in the Loads
-tab.
+> [!NOTE]
+> The consolidated load may take several minutes to appear in the **Loads** tab.
 
 ### Rate the consolidated load
 
@@ -895,10 +862,9 @@ tab.
 
 ### Confirm the consolidated load shipment
 
-1. On the **Load planning workbench**, in the **Loads** tab, select the
-    consolidated load line.
+1. On the **Load planning workbench**, in the **Loads** tab, select the consolidated load line.
 
-2. Select **Outbound load** in the **Ship and receive** drop-down menu.
+2. Select **Outbound shipment** in the **Ship and receive** drop-down menu. Select **OK** to confirm.
 
 Exercise \#6 Configure freight reconciliation (Bonus)
 ------------------------------------------------------
@@ -922,10 +888,9 @@ You will need to do the following:
 
 ### Create a freight reconciliation reason code for Overtime
 
-1. Open **Transportation management \> Setup \> Freight reconciliation \>
-    Reconciliation reasons**.
+1. Open **Transportation management \> Setup \> Freight reconciliation \> Reconciliation reasons**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Type **OT** in the **Reconciliation reason code** field.
 
@@ -935,28 +900,27 @@ You will need to do the following:
 
 6. Select the **Pay the freight vendor** check box.
 
-7. Close the form.
+7. Select **Save**.
+
+8. Close the form.
 
 ### Verify the Freight bill type is configured
 
-1. Open **Transportation management \> Setup \> Freight reconciliation \>
-    Freight bill type**.
+1. Open **Transportation management \> Setup \> Freight reconciliation \> Freight bill type**.
 
-2. Select the TL **Freight bill type**.
+2. Select the **TL** freight bill type.
 
 3. Verify the **Engine assembly** field is populated.
 
-4. Verify that two records exist, one for Billing group ID and one for External
-    code.
+4. Verify that two records exist, one for **Billing group ID** and one for **External code**.
 
 5. Close the form.
 
 ### Create a freight bill type assignment for the Truck Carrier service
 
-1. Open **Transportation management \> Setup \> Freight reconciliation \>
-    Freight bill type assignments**.
+1. Open **Transportation management \> Setup \> Freight reconciliation \> Freight bill type assignments**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Select **None** in the **Direction** field.
 
@@ -970,23 +934,24 @@ You will need to do the following:
 
 ### Create a billing group named Duties
 
-1. Open **Transportation management \> Setup \> Freight reconciliation \>
-    Billing Group**.
+1. Open **Transportation management \> Setup \> Freight reconciliation \> Billing Group**.
 
-2. Select **New**.
+2. Select **+ New**.
 
-3. Type **Duties** in the **Billing group** field.
+3. Type **Duties** in the **Billing group ID** field.
 
 4. Type **Duties** in the **Name** field.
 
-5. Close the form.
+5. Select **Save**.
+
+6. Close the form.
 
 ### Create an audit master for overtime
 
 1. Open **Transportation management \> Setup \> Freight reconciliation \> Audit
     master**.
 
-2. Select **New**.
+2. Select **+ New**.
 
 3. Enter **Overtime** in the **Audit master ID** field.
 

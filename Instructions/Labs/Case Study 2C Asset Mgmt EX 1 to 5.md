@@ -33,7 +33,7 @@ You'll set up new assets for Munson's Pickles and Preserves Farm in Asset Manage
 
 ### Create an asset type
 
-1. In Microsoft Dynamics 365 Supply Chain Management, go to **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.
+1. In USMF, go to **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.
 
 2. Select **+ New** to create a new asset type.
 
